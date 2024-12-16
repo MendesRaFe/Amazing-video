@@ -1,0 +1,1765 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao"
+         xmlns="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#">
+
+<owl:Ontology rdf:about="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao"/>
+
+<owl:ObjectProperty rdf:about="#atuaEm">
+  <owl:inverseOf rdf:resource="#atuadoPor"/>
+  <rdfs:domain rdf:resource="#Ator"/>
+  <rdfs:range rdf:resource="#Filme"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atua em</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#atuadoPor">
+  <rdfs:domain rdf:resource="#Filme"/>
+  <rdfs:range>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#atuadoPor"/>
+      <owl:onClass rdf:resource="#Ator"/>
+      <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    </owl:Restriction>
+  </rdfs:range>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atuado por</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#avaliadoPor">
+  <owl:inverseOf rdf:resource="#fazAvaliacao"/>
+  <rdfs:domain rdf:resource="#Avaliacao"/>
+  <rdfs:range rdf:resource="#Usuario"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">avaliado por</rdfs:label>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">faz avaliação</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#fazAvaliacao">
+  <rdfs:domain rdf:resource="#Usuario"/>
+  <rdfs:range rdf:resource="#Avaliacao"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">faz avaliação</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#conquistaPremio">
+  <rdfs:domain rdf:resource="#Filme"/>
+  <rdfs:range rdf:resource="#Premio"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">conquista prêmio</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#criaRoteiro">
+  <rdfs:domain rdf:resource="#Roteirista"/>
+  <rdfs:range rdf:resource="#Filme"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cria roteiro</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#dadoEm">
+  <rdfs:domain rdf:resource="#Premio"/>
+  <rdfs:range rdf:resource="#Evento"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dado em</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#dirigidoPor">
+  <rdfs:domain rdf:resource="#Filme"/>
+  <rdfs:range>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#dirigidoPor"/>
+      <owl:onClass rdf:resource="#Diretor"/>
+      <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    </owl:Restriction>
+  </rdfs:range>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dirigido por</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#gostaDe">
+  <rdfs:domain rdf:resource="#Usuario"/>
+  <rdfs:range rdf:resource="#Ator"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gosta de</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#pertenceAoFilme">
+  <rdfs:domain rdf:resource="#Avaliacao"/>
+  <rdfs:range rdf:resource="#Filme"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pertence ao filme</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#possuiGenero">
+  <rdfs:domain rdf:resource="#Filme"/>
+  <rdfs:range rdf:resource="#Genero"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">possui gênero</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#produzFilme">
+  <rdfs:domain rdf:resource="#Produtor"/>
+  <rdfs:range rdf:resource="#Filme"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">produz filme</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#temPreferencia">
+  <rdfs:domain rdf:resource="#Usuario"/>
+  <rdfs:range rdf:resource="#Genero"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tem preferência</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:DatatypeProperty rdf:about="#anoLancamento">
+  <rdfs:domain rdf:resource="#Filme"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#anoProducao">
+  <rdfs:domain rdf:resource="#Filme"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#email">
+  <rdfs:domain rdf:resource="#Pessoa"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#idade">
+  <rdfs:domain rdf:resource="#Pessoa"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#idioma">
+  <rdfs:domain rdf:resource="#Filme"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#nacionalidade">
+  <rdfs:domain rdf:resource="#Filme"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#nome">
+  <rdfs:domain rdf:resource="#Pessoa"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#nota">
+  <rdfs:domain rdf:resource="#Avaliacao"/>
+  <rdfs:range>
+    <rdfs:Datatype>
+      <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+      <owl:withRestrictions>
+        <rdf:Description>
+          <rdf:first>
+            <rdf:Description>
+              <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</xsd:minInclusive>
+            </rdf:Description>
+          </rdf:first>
+          <rdf:rest>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</xsd:maxInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </rdf:rest>
+        </rdf:Description>
+      </owl:withRestrictions>
+    </rdfs:Datatype>
+  </rdfs:range>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#telefone">
+  <rdfs:domain rdf:resource="#Pessoa"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#tituloEvento">
+  <rdfs:domain rdf:resource="#Evento"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#tituloOriginal">
+  <rdfs:domain rdf:resource="#Filme"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#tituloPortugues">
+  <rdfs:domain rdf:resource="#Filme"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#tituloPremio">
+  <rdfs:domain rdf:resource="#Premio"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:Class rdf:about="#Ator">
+  <rdfs:subClassOf rdf:resource="#Pessoa"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Filme">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Filme</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Avaliacao">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Avaliação</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Usuario">
+  <rdfs:subClassOf rdf:resource="#Pessoa"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Premio">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prêmio</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Roteirista">
+  <rdfs:subClassOf rdf:resource="#Pessoa"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Evento">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Evento</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Diretor">
+  <rdfs:subClassOf rdf:resource="#Pessoa"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Genero">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gênero</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Produtor">
+  <rdfs:subClassOf rdf:resource="#Pessoa"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Pessoa">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pessoa</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Acao">
+  <rdfs:subClassOf rdf:resource="#Genero"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Comedia">
+  <rdfs:subClassOf rdf:resource="#Genero"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Documentario">
+  <rdfs:subClassOf rdf:resource="#Filme"/>
+  <rdfs:subClassOf>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#atuadoPor"/>
+          <owl:someValuesFrom rdf:resource="#Ator"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#dirigidoPor"/>
+      <owl:onClass rdf:resource="#Diretor"/>
+      <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Documentário</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#FiccaoCientifica">
+  <rdfs:subClassOf rdf:resource="#Genero"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ficção científica</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Musical">
+  <rdfs:subClassOf rdf:resource="#Genero"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Suspense">
+  <rdfs:subClassOf rdf:resource="#Genero"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Terror">
+  <rdfs:subClassOf rdf:resource="#Genero"/>
+</owl:Class>
+
+<owl:NamedIndividual rdf:about="#O_Poderoso_Chefao">
+  <rdf:type rdf:resource="#Filme"/>
+  <possuiGenero rdf:resource="#FilmeDeSuspense"/>
+  <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O Poderoso Chefão</tituloPortugues>
+  <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Godfather</tituloOriginal>
+  <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1972</anoProducao>
+  <anoLancamento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1972</anoLancamento>
+  <nacionalidade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estados Unidos</nacionalidade>
+  <idioma rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inglês</idioma>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_Origem">
+  <rdf:type rdf:resource="#Filme"/>
+  <possuiGenero rdf:resource="#FilmeDeFiccao"/>
+  <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Origem</tituloPortugues>
+  <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inception</tituloOriginal>
+  <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</anoProducao>
+  <anoLancamento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</anoLancamento>
+  <nacionalidade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estados Unidos</nacionalidade>
+  <idioma rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inglês</idioma>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Titanic">
+  <rdf:type rdf:resource="#Filme"/>
+  <possuiGenero rdf:resource="#FilmeDeSuspense"/>
+  <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Titanic</tituloPortugues>
+  <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Titanic</tituloOriginal>
+  <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1997</anoProducao>
+  <anoLancamento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1997</anoLancamento>
+  <nacionalidade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estados Unidos</nacionalidade>
+  <idioma rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inglês</idioma>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Forrest_Gump">
+  <rdf:type rdf:resource="#Filme"/>
+  <possuiGenero rdf:resource="#FilmeDeComedia"/>
+  <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Forrest Gump</tituloPortugues>
+  <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Forrest Gump</tituloOriginal>
+  <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1994</anoProducao>
+  <anoLancamento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1994</anoLancamento>
+  <nacionalidade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estados Unidos</nacionalidade>
+  <idioma rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inglês</idioma>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Matrix">
+  <rdf:type rdf:resource="#Filme"/>
+  <possuiGenero rdf:resource="#FilmeDeFiccao"/>
+  <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matrix</tituloPortugues>
+  <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Matrix</tituloOriginal>
+  <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1999</anoProducao>
+  <anoLancamento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1999</anoLancamento>
+  <nacionalidade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estados Unidos</nacionalidade>
+  <idioma rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inglês</idioma>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#O_Senhor_dos_Aneis:_A_Sociedade_do_Anel">
+  <rdf:type rdf:resource="#Filme"/>
+  <possuiGenero rdf:resource="#FilmeDeAcao"/>
+  <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O Senhor dos Anéis: A Sociedade do Anel</tituloPortugues>
+  <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Lord of the Rings: The Fellowship of the Ring</tituloOriginal>
+  <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2001</anoProducao>
+  <anoLancamento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2001</anoLancamento>
+  <nacionalidade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nova Zelândia</nacionalidade>
+  <idioma rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inglês</idioma>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Vingadores:_Ultimato">
+  <rdf:type rdf:resource="#Filme"/>
+  <possuiGenero rdf:resource="#FilmeDeAcao"/>
+  <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vingadores: Ultimato</tituloPortugues>
+  <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Avengers: Endgame</tituloOriginal>
+  <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2019</anoProducao>
+  <anoLancamento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2019</anoLancamento>
+  <nacionalidade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estados Unidos</nacionalidade>
+  <idioma rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inglês</idioma>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Pantera_Negra">
+  <rdf:type rdf:resource="#Filme"/>
+  <possuiGenero rdf:resource="#FilmeDeAcao"/>
+  <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pantera Negra</tituloPortugues>
+  <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black Panther</tituloOriginal>
+  <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2018</anoProducao>
+  <anoLancamento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2018</anoLancamento>
+  <nacionalidade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estados Unidos</nacionalidade>
+  <idioma rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inglês</idioma>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Homem-Aranha:_Sem_Volta_para_Casa">
+  <rdf:type rdf:resource="#Filme"/>
+  <possuiGenero rdf:resource="#FilmeDeAcao"/>
+  <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Homem-Aranha: Sem Volta para Casa</tituloPortugues>
+  <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spider-Man: No Way Home</tituloOriginal>
+  <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2021</anoProducao>
+  <anoLancamento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2021</anoLancamento>
+  <nacionalidade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estados Unidos</nacionalidade>
+  <idioma rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inglês</idioma>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_Bela_e_a_Fera">
+  <rdf:type rdf:resource="#Filme"/>
+  <possuiGenero rdf:resource="#FilmeMusical"/>
+  <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Bela e a Fera</tituloPortugues>
+  <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beauty and the Beast</tituloOriginal>
+  <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2017</anoProducao>
+  <anoLancamento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2017</anoLancamento>
+  <nacionalidade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estados Unidos</nacionalidade>
+  <idioma rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inglês</idioma>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Gladiador">
+  <rdf:type rdf:resource="#Filme"/>
+  <possuiGenero rdf:resource="#FilmeDeAcao"/>
+  <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gladiador</tituloPortugues>
+  <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gladiator</tituloOriginal>
+  <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</anoProducao>
+  <anoLancamento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</anoLancamento>
+  <nacionalidade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estados Unidos</nacionalidade>
+  <idioma rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inglês</idioma>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Coringa">
+  <rdf:type rdf:resource="#Filme"/>
+  <possuiGenero rdf:resource="#FilmeDeSuspense"/>
+  <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coringa</tituloPortugues>
+  <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joker</tituloOriginal>
+  <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2019</anoProducao>
+  <anoLancamento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2019</anoLancamento>
+  <nacionalidade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estados Unidos</nacionalidade>
+  <idioma rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inglês</idioma>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Duna">
+  <rdf:type rdf:resource="#Filme"/>
+  <possuiGenero rdf:resource="#FilmeDeFiccao"/>
+  <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Duna</tituloPortugues>
+  <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dune</tituloOriginal>
+  <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2021</anoProducao>
+  <anoLancamento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2021</anoLancamento>
+  <nacionalidade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estados Unidos</nacionalidade>
+  <idioma rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inglês</idioma>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Star_Wars:_Uma_Nova_Esperanca">
+  <rdf:type rdf:resource="#Filme"/>
+  <possuiGenero rdf:resource="#FilmeDeFiccao"/>
+  <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Star Wars: Uma Nova Esperança</tituloPortugues>
+  <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Star Wars: A New Hope</tituloOriginal>
+  <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1977</anoProducao>
+  <anoLancamento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1977</anoLancamento>
+  <nacionalidade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estados Unidos</nacionalidade>
+  <idioma rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inglês</idioma>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Interestelar">
+  <rdf:type rdf:resource="#Filme"/>
+  <possuiGenero rdf:resource="#FilmeDeFiccao"/>
+  <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Interestelar</tituloPortugues>
+  <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Interstellar</tituloOriginal>
+  <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2014</anoProducao>
+  <anoLancamento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2014</anoLancamento>
+  <nacionalidade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estados Unidos</nacionalidade>
+  <idioma rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inglês</idioma>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Toy_Story">
+  <rdf:type rdf:resource="#Filme"/>
+  <possuiGenero rdf:resource="#FilmeDeComedia"/>
+  <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Toy Story</tituloPortugues>
+  <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Toy Story</tituloOriginal>
+  <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1995</anoProducao>
+  <anoLancamento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1995</anoLancamento>
+  <nacionalidade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estados Unidos</nacionalidade>
+  <idioma rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inglês</idioma>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Harry_Potter_e_a_Pedra_Filosofal">
+  <rdf:type rdf:resource="#Filme"/>
+  <possuiGenero rdf:resource="#FilmeDeFiccao"/>
+  <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harry Potter e a Pedra Filosofal</tituloPortugues>
+  <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harry Potter and the Sorcerer's Stone</tituloOriginal>
+  <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2001</anoProducao>
+  <anoLancamento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2001</anoLancamento>
+  <nacionalidade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reino Unido</nacionalidade>
+  <idioma rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inglês</idioma>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_Lista_de_Schindler">
+  <rdf:type rdf:resource="#Filme"/>
+  <possuiGenero rdf:resource="#FilmeDeSuspense"/>
+  <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Lista de Schindler</tituloPortugues>
+  <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Schindler's List</tituloOriginal>
+  <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1993</anoProducao>
+  <anoLancamento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1993</anoLancamento>
+  <nacionalidade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estados Unidos</nacionalidade>
+  <idioma rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inglês</idioma>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Pulp_Fiction:_Tempo_de_Violencia">
+  <rdf:type rdf:resource="#Filme"/>
+  <possuiGenero rdf:resource="#FilmeDeSuspense"/>
+  <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pulp Fiction: Tempo de Violência</tituloPortugues>
+  <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pulp Fiction</tituloOriginal>
+  <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1994</anoProducao>
+  <anoLancamento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1994</anoLancamento>
+  <nacionalidade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estados Unidos</nacionalidade>
+  <idioma rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inglês</idioma>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#O_Rei_Leao">
+  <rdf:type rdf:resource="#Filme"/>
+  <possuiGenero rdf:resource="#FilmeMusical"/>
+  <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O Rei Leão</tituloPortugues>
+  <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Lion King</tituloOriginal>
+  <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1994</anoProducao>
+  <anoLancamento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1994</anoLancamento>
+  <nacionalidade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estados Unidos</nacionalidade>
+  <idioma rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inglês</idioma>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Procurando_Nemo">
+  <rdf:type rdf:resource="#Filme"/>
+  <possuiGenero rdf:resource="#FilmeDeComedia"/>
+  <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Procurando Nemo</tituloPortugues>
+  <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Finding Nemo</tituloOriginal>
+  <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2003</anoProducao>
+  <anoLancamento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2003</anoLancamento>
+  <nacionalidade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estados Unidos</nacionalidade>
+  <idioma rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inglês</idioma>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Os_Incriveis">
+  <rdf:type rdf:resource="#Filme"/>
+  <possuiGenero rdf:resource="#FilmeDeAcao"/>
+  <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Os Incríveis</tituloPortugues>
+  <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Incredibles</tituloOriginal>
+  <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2004</anoProducao>
+  <anoLancamento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2004</anoLancamento>
+  <nacionalidade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estados Unidos</nacionalidade>
+  <idioma rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inglês</idioma>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Frozen:_Uma_Aventura_Congelante">
+  <rdf:type rdf:resource="#Filme"/>
+  <possuiGenero rdf:resource="#FilmeMusical"/>
+  <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frozen: Uma Aventura Congelante</tituloPortugues>
+  <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frozen</tituloOriginal>
+  <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2013</anoProducao>
+  <anoLancamento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2013</anoLancamento>
+  <nacionalidade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estados Unidos</nacionalidade>
+  <idioma rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inglês</idioma>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Encanto">
+  <rdf:type rdf:resource="#Filme"/>
+  <possuiGenero rdf:resource="#FilmeMusical"/>
+  <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Encanto</tituloPortugues>
+  <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Encanto</tituloOriginal>
+  <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2021</anoProducao>
+  <anoLancamento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2021</anoLancamento>
+  <nacionalidade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estados Unidos</nacionalidade>
+  <idioma rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inglês</idioma>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Moana:_Um_Mar_de_Aventuras">
+  <rdf:type rdf:resource="#Filme"/>
+  <possuiGenero rdf:resource="#FilmeMusical"/>
+  <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Moana: Um Mar de Aventuras</tituloPortugues>
+  <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Moana</tituloOriginal>
+  <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</anoProducao>
+  <anoLancamento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</anoLancamento>
+  <nacionalidade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estados Unidos</nacionalidade>
+  <idioma rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inglês</idioma>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Carros">
+  <rdf:type rdf:resource="#Filme"/>
+  <possuiGenero rdf:resource="#FilmeDeComedia"/>
+  <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carros</tituloPortugues>
+  <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cars</tituloOriginal>
+  <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2006</anoProducao>
+  <anoLancamento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2006</anoLancamento>
+  <nacionalidade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estados Unidos</nacionalidade>
+  <idioma rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inglês</idioma>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Divertida_Mente">
+  <rdf:type rdf:resource="#Filme"/>
+  <possuiGenero rdf:resource="#FilmeDeComedia"/>
+  <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Divertida Mente</tituloPortugues>
+  <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inside Out</tituloOriginal>
+  <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2015</anoProducao>
+  <anoLancamento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2015</anoLancamento>
+  <nacionalidade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estados Unidos</nacionalidade>
+  <idioma rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inglês</idioma>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Shrek">
+  <rdf:type rdf:resource="#Filme"/>
+  <possuiGenero rdf:resource="#FilmeDeComedia"/>
+  <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shrek</tituloPortugues>
+  <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shrek</tituloOriginal>
+  <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2001</anoProducao>
+  <anoLancamento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2001</anoLancamento>
+  <nacionalidade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estados Unidos</nacionalidade>
+  <idioma rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inglês</idioma>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Kung_Fu_Panda">
+  <rdf:type rdf:resource="#Filme"/>
+  <possuiGenero rdf:resource="#FilmeDeAcao"/>
+  <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kung Fu Panda</tituloPortugues>
+  <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kung Fu Panda</tituloOriginal>
+  <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2008</anoProducao>
+  <anoLancamento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2008</anoLancamento>
+  <nacionalidade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estados Unidos</nacionalidade>
+  <idioma rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inglês</idioma>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Homem_de_Ferro">
+  <rdf:type rdf:resource="#Filme"/>
+  <possuiGenero rdf:resource="#FilmeDeAcao"/>
+  <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Homem de Ferro</tituloPortugues>
+  <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iron Man</tituloOriginal>
+  <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2008</anoProducao>
+  <anoLancamento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2008</anoLancamento>
+  <nacionalidade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estados Unidos</nacionalidade>
+  <idioma rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inglês</idioma>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Capitao_America:_O_Primeiro_Vingador">
+  <rdf:type rdf:resource="#Filme"/>
+  <possuiGenero rdf:resource="#FilmeDeAcao"/>
+  <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Capitão América: O Primeiro Vingador</tituloPortugues>
+  <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Captain America: The First Avenger</tituloOriginal>
+  <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2011</anoProducao>
+  <anoLancamento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2011</anoLancamento>
+  <nacionalidade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estados Unidos</nacionalidade>
+  <idioma rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inglês</idioma>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Guardioes_da_Galaxia">
+  <rdf:type rdf:resource="#Filme"/>
+  <possuiGenero rdf:resource="#FilmeDeAcao"/>
+  <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Guardiões da Galáxia</tituloPortugues>
+  <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Guardians of the Galaxy</tituloOriginal>
+  <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2014</anoProducao>
+  <anoLancamento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2014</anoLancamento>
+  <nacionalidade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estados Unidos</nacionalidade>
+  <idioma rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inglês</idioma>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Thor:_Ragnarok">
+  <rdf:type rdf:resource="#Filme"/>
+  <possuiGenero rdf:resource="#FilmeDeAcao"/>
+  <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thor: Ragnarok</tituloPortugues>
+  <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thor: Ragnarok</tituloOriginal>
+  <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2017</anoProducao>
+  <anoLancamento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2017</anoLancamento>
+  <nacionalidade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estados Unidos</nacionalidade>
+  <idioma rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inglês</idioma>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Viuva_Negra">
+  <rdf:type rdf:resource="#Filme"/>
+  <possuiGenero rdf:resource="#FilmeDeAcao"/>
+  <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Viúva Negra</tituloPortugues>
+  <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black Widow</tituloOriginal>
+  <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2021</anoProducao>
+  <anoLancamento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2021</anoLancamento>
+  <nacionalidade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estados Unidos</nacionalidade>
+  <idioma rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inglês</idioma>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Avatar">
+  <rdf:type rdf:resource="#Filme"/>
+  <possuiGenero rdf:resource="#FilmeDeFiccao"/>
+  <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Avatar</tituloPortugues>
+  <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Avatar</tituloOriginal>
+  <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2009</anoProducao>
+  <anoLancamento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2009</anoLancamento>
+  <nacionalidade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estados Unidos</nacionalidade>
+  <idioma rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inglês</idioma>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Top_Gun:_Maverick">
+  <rdf:type rdf:resource="#Filme"/>
+  <possuiGenero rdf:resource="#FilmeDeAcao"/>
+  <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Top Gun: Maverick</tituloPortugues>
+  <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Top Gun: Maverick</tituloOriginal>
+  <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2022</anoProducao>
+  <anoLancamento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2022</anoLancamento>
+  <nacionalidade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estados Unidos</nacionalidade>
+  <idioma rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inglês</idioma>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Cisne_Negro">
+  <rdf:type rdf:resource="#Filme"/>
+  <possuiGenero rdf:resource="#FilmeDeSuspense"/>
+  <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cisne Negro</tituloPortugues>
+  <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black Swan</tituloOriginal>
+  <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</anoProducao>
+  <anoLancamento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</anoLancamento>
+  <nacionalidade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estados Unidos</nacionalidade>
+  <idioma rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inglês</idioma>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_Teoria_de_Tudo">
+  <rdf:type rdf:resource="#Filme"/>
+  <possuiGenero rdf:resource="#FilmeDeSuspense"/>
+  <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Teoria de Tudo</tituloPortugues>
+  <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Theory of Everything</tituloOriginal>
+  <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2014</anoProducao>
+  <anoLancamento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2014</anoLancamento>
+  <nacionalidade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reino Unido</nacionalidade>
+  <idioma rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inglês</idioma>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Bohemian_Rhapsody">
+  <rdf:type rdf:resource="#Filme"/>
+  <possuiGenero rdf:resource="#FilmeMusical"/>
+  <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bohemian Rhapsody</tituloPortugues>
+  <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bohemian Rhapsody</tituloOriginal>
+  <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2018</anoProducao>
+  <anoLancamento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2018</anoLancamento>
+  <nacionalidade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reino Unido</nacionalidade>
+  <idioma rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inglês</idioma>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#O_Exorcista">
+  <rdf:type rdf:resource="#Filme"/>
+  <possuiGenero rdf:resource="#FilmeDeTerror"/>
+  <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O Exorcista</tituloPortugues>
+  <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Exorcist</tituloOriginal>
+  <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1973</anoProducao>
+  <anoLancamento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1973</anoLancamento>
+  <nacionalidade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estados Unidos</nacionalidade>
+  <idioma rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inglês</idioma>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Psicose">
+  <rdf:type rdf:resource="#Filme"/>
+  <possuiGenero rdf:resource="#FilmeDeTerror"/>
+  <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Psicose</tituloPortugues>
+  <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Psycho</tituloOriginal>
+  <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1960</anoProducao>
+  <anoLancamento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1960</anoLancamento>
+  <nacionalidade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estados Unidos</nacionalidade>
+  <idioma rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inglês</idioma>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#O_Iluminado">
+  <rdf:type rdf:resource="#Filme"/>
+  <possuiGenero rdf:resource="#FilmeDeTerror"/>
+  <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O Iluminado</tituloPortugues>
+  <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Shining</tituloOriginal>
+  <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1980</anoProducao>
+  <anoLancamento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1980</anoLancamento>
+  <nacionalidade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estados Unidos</nacionalidade>
+  <idioma rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inglês</idioma>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Joao">
+  <rdf:type rdf:resource="#Usuario"/>
+  <temPreferencia rdf:resource="#FilmeDeSuspense"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">João</nome>
+  <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">joao@exemplo.com</email>
+  <telefone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9999-1111</telefone>
+  <idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</idade>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Maria">
+  <rdf:type rdf:resource="#Usuario"/>
+  <temPreferencia rdf:resource="#FilmeMusical"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maria</nome>
+  <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">maria@exemplo.com</email>
+  <telefone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9999-2222</telefone>
+  <idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</idade>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Carlos">
+  <rdf:type rdf:resource="#Usuario"/>
+  <temPreferencia rdf:resource="#FilmeDeSuspense"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carlos</nome>
+  <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carlos@exemplo.com</email>
+  <telefone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9999-3333</telefone>
+  <idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</idade>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ana">
+  <rdf:type rdf:resource="#Usuario"/>
+  <temPreferencia rdf:resource="#FilmeDeAcao"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ana</nome>
+  <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ana@exemplo.com</email>
+  <telefone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9999-4444</telefone>
+  <idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</idade>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Lucas">
+  <rdf:type rdf:resource="#Usuario"/>
+  <temPreferencia rdf:resource="#FilmeMusical"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lucas</nome>
+  <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lucas@exemplo.com</email>
+  <telefone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9999-5555</telefone>
+  <idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</idade>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Beatriz">
+  <rdf:type rdf:resource="#Usuario"/>
+  <temPreferencia rdf:resource="#FilmeDeSuspense"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beatriz</nome>
+  <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beatriz@exemplo.com</email>
+  <telefone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9999-6666</telefone>
+  <idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</idade>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Paulo">
+  <rdf:type rdf:resource="#Usuario"/>
+  <temPreferencia rdf:resource="#FilmeDeTerror"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paulo</nome>
+  <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">paulo@exemplo.com</email>
+  <telefone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9999-7777</telefone>
+  <idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">33</idade>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Mariana">
+  <rdf:type rdf:resource="#Usuario"/>
+  <temPreferencia rdf:resource="#FilmeDeAcao"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mariana</nome>
+  <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mariana@exemplo.com</email>
+  <telefone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9999-8888</telefone>
+  <idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</idade>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ricardo">
+  <rdf:type rdf:resource="#Usuario"/>
+  <temPreferencia rdf:resource="#FilmeDeComedia"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ricardo</nome>
+  <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ricardo@exemplo.com</email>
+  <telefone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9999-9999</telefone>
+  <idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</idade>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Fernanda">
+  <rdf:type rdf:resource="#Usuario"/>
+  <temPreferencia rdf:resource="#FilmeDeSuspense"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fernanda</nome>
+  <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fernanda@exemplo.com</email>
+  <telefone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9888-1111</telefone>
+  <idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</idade>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Juliana">
+  <rdf:type rdf:resource="#Usuario"/>
+  <temPreferencia rdf:resource="#FilmeDeAcao"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Juliana</nome>
+  <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">juliana@exemplo.com</email>
+  <telefone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9888-2222</telefone>
+  <idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31</idade>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Gabriel">
+  <rdf:type rdf:resource="#Usuario"/>
+  <temPreferencia rdf:resource="#FilmeDeComedia"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gabriel</nome>
+  <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gabriel@exemplo.com</email>
+  <telefone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9888-3333</telefone>
+  <idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29</idade>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Roberta">
+  <rdf:type rdf:resource="#Usuario"/>
+  <temPreferencia rdf:resource="#FilmeDeTerror"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Roberta</nome>
+  <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">roberta@exemplo.com</email>
+  <telefone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9888-4444</telefone>
+  <idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26</idade>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Eduardo">
+  <rdf:type rdf:resource="#Usuario"/>
+  <temPreferencia rdf:resource="#FilmeMusical"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eduardo</nome>
+  <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eduardo@exemplo.com</email>
+  <telefone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9888-5555</telefone>
+  <idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</idade>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Simone">
+  <rdf:type rdf:resource="#Usuario"/>
+  <temPreferencia rdf:resource="#FilmeDeSuspense"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Simone</nome>
+  <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">simone@exemplo.com</email>
+  <telefone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9888-6666</telefone>
+  <idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">38</idade>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Marlon_Brando">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marlon Brando</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Al_Pacino">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Al Pacino</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Leonardo_DiCaprio">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leonardo DiCaprio</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Joseph_Gordon-Levitt">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joseph Gordon-Levitt</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ellen_Page">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ellen Page</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Kate_Winslet">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kate Winslet</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Tom_Hanks">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tom Hanks</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Robin_Wright">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Robin Wright</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Keanu_Reeves">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Keanu Reeves</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Laurence_Fishburne">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Laurence Fishburne</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Carrie-Anne_Moss">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carrie-Anne Moss</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Elijah_Wood">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Elijah Wood</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ian_McKellen">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ian McKellen</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Viggo_Mortensen">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Viggo Mortensen</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Robert_Downey_Jr.">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Robert Downey Jr.</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Chris_Evans">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chris Evans</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Scarlett_Johansson">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scarlett Johansson</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Chadwick_Boseman">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chadwick Boseman</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Michael_B._Jordan">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Michael B. Jordan</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Tom_Holland">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tom Holland</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Benedict_Cumberbatch">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Benedict Cumberbatch</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Zendaya">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zendaya</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Emma_Watson">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Emma Watson</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Dan_Stevens">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dan Stevens</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Russell_Crowe">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Russell Crowe</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Joaquin_Phoenix">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joaquin Phoenix</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Connie_Nielsen">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Connie Nielsen</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Timothee_Chalamet">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Timothée Chalamet</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Oscar_Isaac">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oscar Isaac</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Mark_Hamill">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mark Hamill</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Harrison_Ford">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harrison Ford</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Carrie_Fisher">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carrie Fisher</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Matthew_McConaughey">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matthew McConaughey</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Anne_Hathaway">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anne Hathaway</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Jessica_Chastain">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jessica Chastain</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Tim_Allen">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tim Allen</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Daniel_Radcliffe">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Daniel Radcliffe</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Rupert_Grint">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rupert Grint</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Liam_Neeson">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liam Neeson</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ben_Kingsley">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ben Kingsley</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ralph_Fiennes">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ralph Fiennes</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#John_Travolta">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">John Travolta</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Uma_Thurman">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Uma Thurman</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Samuel_L._Jackson">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Samuel L. Jackson</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Matthew_Broderick">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matthew Broderick</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#James_Earl_Jones">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">James Earl Jones</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Albert_Brooks">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Albert Brooks</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ellen_DeGeneres">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ellen DeGeneres</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Craig_T._Nelson">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Craig T. Nelson</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Holly_Hunter">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Holly Hunter</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Kristen_Bell">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kristen Bell</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Idina_Menzel">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Idina Menzel</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Stephanie_Beatriz">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stephanie Beatriz</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Maria_Cecilia_Botero">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">María Cecilia Botero</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Auli'i_Cravalho">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Auli'i Cravalho</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Dwayne_Johnson">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dwayne Johnson</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Owen_Wilson">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Owen Wilson</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Larry_the_Cable_Guy">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Larry the Cable Guy</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Amy_Poehler">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amy Poehler</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Phyllis_Smith">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phyllis Smith</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Mike_Myers">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mike Myers</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Eddie_Murphy">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eddie Murphy</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Cameron_Diaz">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cameron Diaz</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Jack_Black">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jack Black</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Dustin_Hoffman">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dustin Hoffman</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Angelina_Jolie">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Angelina Jolie</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Gwyneth_Paltrow">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gwyneth Paltrow</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Jeff_Bridges">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeff Bridges</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Hayley_Atwell">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hayley Atwell</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Chris_Pratt">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chris Pratt</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Zoe_Saldana">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoe Saldana</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Dave_Bautista">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dave Bautista</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Chris_Hemsworth">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chris Hemsworth</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Tom_Hiddleston">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tom Hiddleston</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Cate_Blanchett">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cate Blanchett</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Florence_Pugh">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Florence Pugh</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#David_Harbour">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">David Harbour</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Sam_Worthington">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sam Worthington</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Sigourney_Weaver">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sigourney Weaver</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Miles_Teller">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Miles Teller</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Jennifer_Connelly">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jennifer Connelly</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Natalie_Portman">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Natalie Portman</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Mila_Kunis">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mila Kunis</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Eddie_Redmayne">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eddie Redmayne</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Felicity_Jones">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felicity Jones</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Rami_Malek">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rami Malek</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Lucy_Boynton">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lucy Boynton</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Linda_Blair">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Linda Blair</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Max_von_Sydow">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Max von Sydow</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Anthony_Perkins">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anthony Perkins</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Janet_Leigh">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Janet Leigh</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Jack_Nicholson">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jack Nicholson</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Shelley_Duvall">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shelley Duvall</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Francis_Ford_Coppola">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Francis Ford Coppola</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Christopher_Nolan">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Christopher Nolan</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#James_Cameron">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">James Cameron</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Robert_Zemeckis">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Robert Zemeckis</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Lana_Wachowski">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lana Wachowski</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Lilly_Wachowski">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lilly Wachowski</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Peter_Jackson">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peter Jackson</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Anthony_Russo">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anthony Russo</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Joe_Russo">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joe Russo</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ryan_Coogler">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ryan Coogler</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Jon_Watts">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jon Watts</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Bill_Condon">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Condon</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ridley_Scott">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ridley Scott</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Todd_Phillips">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Todd Phillips</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Denis_Villeneuve">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Denis Villeneuve</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#George_Lucas">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">George Lucas</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#John_Lasseter">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">John Lasseter</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Chris_Columbus">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chris Columbus</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Steven_Spielberg">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Steven Spielberg</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Quentin_Tarantino">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quentin Tarantino</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Roger_Allers">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Roger Allers</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Rob_Minkoff">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rob Minkoff</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Andrew_Stanton">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Andrew Stanton</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Brad_Bird">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brad Bird</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Chris_Buck">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chris Buck</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Jennifer_Lee">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jennifer Lee</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Jared_Bush">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jared Bush</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Byron_Howard">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Byron Howard</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Charise_Castro_Smith">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Charise Castro Smith</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ron_Clements">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ron Clements</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#John_Musker">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">John Musker</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Joe_Ranft">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joe Ranft</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Pete_Docter">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pete Docter</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ronnie_del_Carmen">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ronnie del Carmen</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Andrew_Adamson">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Andrew Adamson</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Vicky_Jenson">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vicky Jenson</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Mark_Osborne">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mark Osborne</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#John_Stevenson">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">John Stevenson</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Jon_Favreau">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jon Favreau</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Joe_Johnston">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joe Johnston</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#James_Gunn">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">James Gunn</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Taika_Waititi">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Taika Waititi</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Cate_Shortland">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cate Shortland</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Joseph_Kosinski">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joseph Kosinski</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Darren_Aronofsky">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Darren Aronofsky</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#James_Marsh">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">James Marsh</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Bryan_Singer">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bryan Singer</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#William_Friedkin">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">William Friedkin</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Alfred_Hitchcock">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alfred Hitchcock</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Stanley_Kubrick">
+  <rdf:type rdf:resource="#Diretor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stanley Kubrick</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Produtor01">
+  <rdf:type rdf:resource="#Produtor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Emma Thomas</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Produtor02">
+  <rdf:type rdf:resource="#Produtor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jon Landau</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Produtor03">
+  <rdf:type rdf:resource="#Produtor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wendy Finerman</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Produtor04">
+  <rdf:type rdf:resource="#Produtor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Steve Tisch</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Produtor05">
+  <rdf:type rdf:resource="#Produtor"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joel Silver</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Roreirista01">
+  <rdf:type rdf:resource="#Roteirista"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pete Docter</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Roteirista02">
+  <rdf:type rdf:resource="#Roteirista"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Elliott</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Roteirista03">
+  <rdf:type rdf:resource="#Roteirista"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jonathan Aibel</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Roteirista04">
+  <rdf:type rdf:resource="#Roteirista"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Art Marcum</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Roteirista05">
+  <rdf:type rdf:resource="#Roteirista"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matt Holloway</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Roteirista06">
+  <rdf:type rdf:resource="#Roteirista"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Christopher Markus</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#FilmeDeAcao">
+  <rdf:type rdf:resource="#Acao"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#FilmeDeComedia">
+  <rdf:type rdf:resource="#Comedia"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#FilmeDeFiccao">
+  <rdf:type rdf:resource="#FiccaoCientifica"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#FilmeMusical">
+  <rdf:type rdf:resource="#Musical"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#FilmeDeSuspense">
+  <rdf:type rdf:resource="#Suspense"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#FilmeDeTerror">
+  <rdf:type rdf:resource="#Terror"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Evento01">
+  <rdf:type rdf:resource="#Evento"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oscar 1973</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Evento02">
+  <rdf:type rdf:resource="#Evento"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Globo de Ouro 1973</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Evento03">
+  <rdf:type rdf:resource="#Evento"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oscar 1998</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Evento04">
+  <rdf:type rdf:resource="#Evento"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Globo de Ouro 1998</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Evento05">
+  <rdf:type rdf:resource="#Evento"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oscar 2000</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Evento06">
+  <rdf:type rdf:resource="#Evento"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BAFTA 2000</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Evento07">
+  <rdf:type rdf:resource="#Evento"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oscar 2002</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Evento08">
+  <rdf:type rdf:resource="#Evento"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BAFTA 2002</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Evento09">
+  <rdf:type rdf:resource="#Evento"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oscar 2020</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Evento10">
+  <rdf:type rdf:resource="#Evento"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Globo de Ouro 2020</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Premio01">
+  <rdf:type rdf:resource="#Premio"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Melhor Filme</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Premio02">
+  <rdf:type rdf:resource="#Premio"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Melhor Ator</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Premio03">
+  <rdf:type rdf:resource="#Premio"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Melhor Roteiro Adaptado</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Premio04">
+  <rdf:type rdf:resource="#Premio"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Melhor Diretor</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Premio05">
+  <rdf:type rdf:resource="#Premio"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Melhor Fotografia</nome>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Melhor Edição</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Premio06">
+  <rdf:type rdf:resource="#Premio"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Melhor Efeitos Visuais</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Premio07">
+  <rdf:type rdf:resource="#Premio"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Melhor Trilha Sonora</nome>
+</owl:NamedIndividual>
+
+<rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#int"/>
+
+<rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+
+
+</rdf:RDF>
