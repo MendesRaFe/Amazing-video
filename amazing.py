@@ -3,7 +3,7 @@ import unicodedata
 import random
 #from owlready2 import sync_reasoner_pellet
 
-onto = get_ontology("C:\\Users\\phell\\Dropbox\\projetos\\webSemantica\\filmesV1.rdf").load()
+onto = get_ontology("filmesV1.rdf").load()
 
 # Executar o reasoner para aplicar inferências
 #sync_reasoner_pellet()
@@ -462,4 +462,4 @@ for usuario in onto.Usuario.instances():
 
 
 # Salvar as alterações no RDF com identificadores únicos
-#onto.save(file="C:\\Users\\phell\\Dropbox\\projetos\\webSemantica\\filmes_atualizado_com_ids.rdf")
+#onto.save(file="filmes_atualizado_com_ids.rdf")
