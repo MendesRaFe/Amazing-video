@@ -119,6 +119,51 @@ usuarios = [
     {"nome": "Simone", "email": "simone@exemplo.com", "telefone": "9888-6666", "idade": 38}
 ]
 
+filmes_e_atores = [
+    {"filme": "O_Poderoso_Chefao", "atores": ["Marlon_Brando", "Al_Pacino"]},
+    {"filme": "A_Origem", "atores": ["Leonardo_DiCaprio", "Joseph_Gordon-Levitt", "Ellen_Page"]},
+    {"filme": "Titanic", "atores": ["Leonardo_DiCaprio", "Kate_Winslet"]},
+    {"filme": "Forrest_Gump", "atores": ["Tom_Hanks", "Robin_Wright"]},
+    {"filme": "Matrix", "atores": ["Keanu_Reeves", "Laurence_Fishburne", "Carrie-Anne_Moss"]},
+    {"filme": "O_Senhor_dos_Aneis:_A_Sociedade_do_Anel", "atores": ["Elijah_Wood", "Ian_McKellen", "Viggo_Mortensen"]},
+    {"filme": "Vingadores:_Ultimato", "atores": ["Robert_Downey_Jr.", "Chris_Evans", "Scarlett_Johansson"]},
+    {"filme": "Pantera_Negra", "atores": ["Chadwick_Boseman", "Michael_B._Jordan"]},
+    {"filme": "Homem-Aranha:_Sem_Volta_para_Casa", "atores": ["Tom_Holland", "Benedict_Cumberbatch", "Zendaya"]},
+    {"filme": "A_Bela_e_a_Fera", "atores": ["Emma_Watson", "Dan_Stevens"]},
+    {"filme": "Gladiador", "atores": ["Russell_Crowe", "Joaquin_Phoenix", "Connie_Nielsen"]},
+    {"filme": "Coringa", "atores": ["Joaquin_Phoenix"]},
+    {"filme": "Duna", "atores": ["Timothee_Chalamet", "Oscar_Isaac"]},
+    {"filme": "Star_Wars:_Uma_Nova_Esperanca", "atores": ["Mark_Hamill", "Harrison_Ford", "Carrie_Fisher"]},
+    {"filme": "Interestelar", "atores": ["Matthew_McConaughey", "Anne_Hathaway", "Jessica_Chastain"]},
+    {"filme": "Toy_Story", "atores": ["Tim_Allen", "Tom_Hanks"]},
+    {"filme": "Harry_Potter_e_a_Pedra_Filosofal", "atores": ["Daniel_Radcliffe", "Rupert_Grint", "Emma_Watson"]},
+    {"filme": "A_Lista_de_Schindler", "atores": ["Liam_Neeson", "Ben_Kingsley", "Ralph_Fiennes"]},
+    {"filme": "Pulp_Fiction:_Tempo_de_Violencia", "atores": ["John_Travolta", "Uma_Thurman", "Samuel_L._Jackson"]},
+    {"filme": "O_Rei_Leao", "atores": ["Matthew_Broderick", "James_Earl_Jones"]},
+    {"filme": "Procurando_Nemo", "atores": ["Albert_Brooks", "Ellen_DeGeneres"]},
+    {"filme": "Os_Incriveis", "atores": ["Craig_T._Nelson", "Holly_Hunter"]},
+    {"filme": "Frozen:_Uma_Aventura_Congelante", "atores": ["Kristen_Bell", "Idina_Menzel"]},
+    {"filme": "Encanto", "atores": ["Stephanie_Beatriz", "Maria_Cecilia_Botero"]},
+    {"filme": "Moana:_Um_Mar_de_Aventuras", "atores": ["Auli'i_Cravalho", "Dwayne_Johnson"]},
+    {"filme": "Carros", "atores": ["Owen_Wilson", "Larry_the_Cable_Guy"]},
+    {"filme": "Divertida_Mente", "atores": ["Amy_Poehler", "Phyllis_Smith"]},
+    {"filme": "Shrek", "atores": ["Mike_Myers", "Eddie_Murphy"]},
+    {"filme": "Kung_Fu_Panda", "atores": ["Jack_Black", "Dustin_Hoffman"]},
+    {"filme": "Homem_de_Ferro", "atores": ["Robert_Downey_Jr.", "Gwyneth_Paltrow"]},
+    {"filme": "Capitao_America:_O_Primeiro_Vingador", "atores": ["Chris_Evans", "Hayley_Atwell"]},
+    {"filme": "Guardioes_da_Galaxia", "atores": ["Chris_Pratt", "Zoe_Saldana", "Dave_Bautista"]},
+    {"filme": "Thor:_Ragnarok", "atores": ["Chris_Hemsworth", "Tom_Hiddleston", "Cate_Blanchett"]},
+    {"filme": "Viuva_Negra", "atores": ["Scarlett_Johansson", "Florence_Pugh"]},
+    {"filme": "Avatar", "atores": ["Sam_Worthington", "Sigourney_Weaver"]},
+    {"filme": "Top_Gun:_Maverick", "atores": ["Tom_Cruise", "Miles_Teller"]},
+    {"filme": "Cisne_Negro", "atores": ["Natalie_Portman", "Mila_Kunis"]},
+    {"filme": "A_Teoria_de_Tudo", "atores": ["Eddie_Redmayne", "Felicity_Jones"]},
+    {"filme": "Bohemian_Rhapsody", "atores": ["Rami_Malek", "Lucy_Boynton"]},
+    {"filme": "O_Exorcista", "atores": ["Linda_Blair", "Max_von_Sydow"]},
+    {"filme": "Psicose", "atores": ["Anthony_Perkins", "Janet_Leigh"]},
+    {"filme": "O_Iluminado", "atores": ["Jack_Nicholson", "Shelley_Duvall"]}
+]
+
 atores = [
     {"nome": "Marlon Brando"},
     {"nome": "Al Pacino"},
@@ -199,6 +244,7 @@ atores = [
     {"nome": "David Harbour"},
     {"nome": "Sam Worthington"},
     {"nome": "Sigourney Weaver"},
+    {"nome": "Tom Cruise"},
     {"nome": "Miles Teller"},
     {"nome": "Jennifer Connelly"},
     {"nome": "Natalie Portman"},
@@ -438,6 +484,7 @@ def filme_possui_genero():
 # Chama a função
 filme_possui_genero()
 
+
 # Defina a função para associar a preferência do usuário por gênero de filme
 def usuario_temPreferencia_genero():
     #genero = ['FilmeDeSuspense', 'FilmeDeFiccao', 'FilmeDeComedia', 'FilmeDeAcao', 'FilmeMusical', 'FilmeDeTerror']
@@ -448,17 +495,34 @@ def usuario_temPreferencia_genero():
 # Chama a função
 usuario_temPreferencia_genero()
 
-for usuario in onto.Usuario.instances():
-    # Obtem o nome do filme e do gênero
-    nome_usuario = usuario.name  # Obtém o nome do filme
-    generos = usuario.temPreferencia  # Obtém os gêneros associados
 
-    # Imprime os resultados
-    for genero in generos:
-        print(f"Filme: {nome_usuario}, Gênero: {genero.name}")
+def filme_atuadoPor_ator():
+    for item in filmes_e_atores:
+        filme = item["filme"]
+        atores = item["atores"]
+        filme = onto.Filme(filme)
+
+        for ator in atores:
+            # Busca os indivíduos na ontologia
+            ator = onto.Ator(ator)
+
+            # Adiciona o ator ao filme
+            filme.atuadoPor.append(ator)
+
+filme_atuadoPor_ator()
+
+# print([filme.name for filme in onto.Filme.instances()])
+# print()
+# print([ator.name for ator in onto.Ator.instances()])
+
+
+# for atores in onto.Ator.instances():
+#     print(atores)
 
 #print(dir(onto))
 #print(list(onto.properties()))
+
+
 
 
 # Salvar as alterações no RDF com identificadores únicos
