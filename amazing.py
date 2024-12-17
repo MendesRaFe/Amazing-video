@@ -641,6 +641,63 @@ onto.search_one(iri="*Roteirista04").criaRoteiro.append(onto.search_one(iri="*Ho
 onto.search_one(iri="*Roteirista05").criaRoteiro.append(onto.search_one(iri="*Homem_de_Ferro"))
 onto.search_one(iri="*Roteirista06").criaRoteiro.append(onto.search_one(iri="*Capitao_America:_O_Primeiro_Vingador"))
 
+# Busca uma instância de uma classe pelo nome (iri parcial).
+def buscar_instancia(classe, nome):       
+    return onto.search_one(iri=f"*{nome}")
+
+#Cria uma avaliação apenas se o mesmo usuário não avaliou o mesmo filme antes.
+def criar_avaliacao(nome_avaliacao, nome_usuario, nome_filme, nota):
+
+    # Busca as instâncias do usuário e do filme
+    usuario = buscar_instancia(onto.Usuario, nome_usuario)
+    filme = buscar_instancia(onto.Filme, nome_filme)
+
+    if not usuario:
+        print(f"Erro: Usuário '{nome_usuario}' não encontrado.")
+        return
+    if not filme:
+        print(f"Erro: Filme '{nome_filme}' não encontrado.")
+        return
+
+    # Verifica se já existe uma avaliação feita pelo usuário para o mesmo filme
+    avaliacao_existente = onto.search(type=onto.Avaliacao, avaliadoPor=usuario, pertenceAoFilme=filme)
+    
+    if avaliacao_existente:
+        print(f"Erro: {usuario.name} já avaliou o filme {filme.name}. Avaliação não permitida.")
+    else:
+        # Cria uma nova avaliação
+        nova_avaliacao = onto.Avaliacao(nome_avaliacao)
+        nova_avaliacao.nota.append(nota)
+        nova_avaliacao.avaliadoPor.append(usuario)
+        nova_avaliacao.pertenceAoFilme.append(filme)
+
+        
+# Iterar sobre todas as instâncias de Usuario e Filme
+usuarios = [u.name for u in onto.Usuario.instances()]  
+filmes = [f.name for f in onto.Filme.instances()]     
+
+# Notas e suas probabilidades
+notas = [1, 2, 3, 4, 5]
+probabilidades = [0.1, 0.2, 0.3, 0.2, 0.2]
+
+# Ponto de corte para dividir os filmes
+ponto_corte = 21
+
+# Criar avaliações alternando entre os intervalos de filmes para cada usuário
+avaliacao_id = 1  # Contador para os nomes das avaliações
+for i, usuario in enumerate(usuarios):
+    # Se o índice do usuário for par, ele avalia os primeiros 21 filmes, se for ímpar, avalia do 21 em diante
+    if i % 2 == 0:
+        filmes_para_avaliar = filmes[:ponto_corte]  # 21 primeiros filmes
+    else:
+        filmes_para_avaliar = filmes[ponto_corte:]  # Filmes do 22º em diante
+
+    # Iteração sobre os filmes a serem avaliados
+    for filme in filmes_para_avaliar:
+        nota = random.choices(notas, probabilidades, k=1)[0]  # Gera uma nota de 1 a 5
+        criar_avaliacao(f"Aval{avaliacao_id}", usuario, filme, nota)  # Chama a função para criar a avaliação
+        avaliacao_id += 1  # Incrementa o ID da avaliação
+
 
 #print([filme.name for filme in onto.Filme.instances()])
 # print()
@@ -654,4 +711,4 @@ onto.search_one(iri="*Roteirista06").criaRoteiro.append(onto.search_one(iri="*Ca
 #print(list(onto.properties()))
 
 # Salvar as alterações no RDF com identificadores únicos
-onto.save(file="filmes_atualizado_com_ids.rdf")
+#onto.save(file="filmes_atualizado_com_ids.rdf")
