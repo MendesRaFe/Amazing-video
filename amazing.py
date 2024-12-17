@@ -493,7 +493,7 @@ premio = onto.Premio('Premio02')
 premio.nome.append('Melhor Ator')
 
 premio = onto.Premio('Premio03')
-premio.nome.append('Melhor Roteiro Adaptado')
+premio.nome.append('Melhor Roteiro')
 
 premio = onto.Premio('Premio04')
 premio.nome.append('Melhor Diretor')
@@ -501,13 +501,13 @@ premio.nome.append('Melhor Diretor')
 premio = onto.Premio('Premio05')
 premio.nome.append('Melhor Fotografia')
 
-premio = onto.Premio('Premio05')
+premio = onto.Premio('Premio06')
 premio.nome.append('Melhor Edição')
 
-premio = onto.Premio('Premio06')
+premio = onto.Premio('Premio07')
 premio.nome.append('Melhor Efeitos Visuais')
 
-premio = onto.Premio('Premio07')
+premio = onto.Premio('Premio08')
 premio.nome.append('Melhor Trilha Sonora')
 
 # Defina a função para associar o gênero a cada filme
@@ -567,6 +567,62 @@ def filme_dirigidoPor_diretor():
             filme.dirigidoPor.append(diretor)
 
 filme_dirigidoPor_diretor()
+
+# Adiciona propriedade entre filme e prêmio
+onto.search_one(iri="*O_Poderoso_Chefao").conquistaPremio.append(onto.search_one(iri="*Premio01")) # melhor filme
+onto.search_one(iri="*O_Poderoso_Chefao").conquistaPremio.append(onto.search_one(iri="*Premio02"))  # melhor ator
+onto.search_one(iri="*O_Poderoso_Chefao").conquistaPremio.append(onto.search_one(iri="*Premio03"))  # melhor roteiro
+
+onto.search_one(iri="*Titanic").conquistaPremio.append(onto.search_one(iri="*Premio01"))  # melhor filme
+onto.search_one(iri="*Titanic").conquistaPremio.append(onto.search_one(iri="*Premio04"))  # melhor diretor
+onto.search_one(iri="*Titanic").conquistaPremio.append(onto.search_one(iri="*Premio08"))  # melhor trilha sonora
+
+onto.search_one(iri="*Matrix").conquistaPremio.append(onto.search_one(iri="*Premio06"))  # melhor edição
+onto.search_one(iri="*Matrix").conquistaPremio.append(onto.search_one(iri="*Premio07"))  # melhor efeitos visuais
+
+onto.search_one(iri="*O_Senhor_dos_Aneis:_A_Sociedade_do_Anel").conquistaPremio.append(onto.search_one(iri="*Premio07"))  # melhor efeitos visuais
+onto.search_one(iri="*O_Senhor_dos_Aneis:_A_Sociedade_do_Anel").conquistaPremio.append(onto.search_one(iri="*Premio05"))  # melhor fotografia
+
+onto.search_one(iri="*Coringa").conquistaPremio.append(onto.search_one(iri="*Premio02"))  # melhor ator
+onto.search_one(iri="*Coringa").conquistaPremio.append(onto.search_one(iri="*Premio08"))  # melhor trilha sonora
+
+
+# Adiciona propriedade entre prêmio e evento
+onto.search_one(iri="*Premio01").dadoEm.append(onto.search_one(iri="*Evento01"))  # Oscar 1973
+onto.search_one(iri="*Premio02").dadoEm.append(onto.search_one(iri="*Evento01"))
+onto.search_one(iri="*Premio03").dadoEm.append(onto.search_one(iri="*Evento01"))
+onto.search_one(iri="*Premio04").dadoEm.append(onto.search_one(iri="*Evento01"))
+onto.search_one(iri="*Premio05").dadoEm.append(onto.search_one(iri="*Evento01"))
+onto.search_one(iri="*Premio06").dadoEm.append(onto.search_one(iri="*Evento01"))
+onto.search_one(iri="*Premio07").dadoEm.append(onto.search_one(iri="*Evento01"))
+onto.search_one(iri="*Premio08").dadoEm.append(onto.search_one(iri="*Evento01"))
+
+onto.search_one(iri="*Premio01").dadoEm.append(onto.search_one(iri="*Evento02"))  # Globo de Ouro 1973
+onto.search_one(iri="*Premio02").dadoEm.append(onto.search_one(iri="*Evento02"))
+onto.search_one(iri="*Premio03").dadoEm.append(onto.search_one(iri="*Evento02"))
+onto.search_one(iri="*Premio04").dadoEm.append(onto.search_one(iri="*Evento02"))
+onto.search_one(iri="*Premio05").dadoEm.append(onto.search_one(iri="*Evento02"))
+onto.search_one(iri="*Premio06").dadoEm.append(onto.search_one(iri="*Evento02"))
+onto.search_one(iri="*Premio07").dadoEm.append(onto.search_one(iri="*Evento02"))
+onto.search_one(iri="*Premio08").dadoEm.append(onto.search_one(iri="*Evento02"))
+
+onto.search_one(iri="*Premio01").dadoEm.append(onto.search_one(iri="*Evento03"))  # Oscar 1998
+onto.search_one(iri="*Premio02").dadoEm.append(onto.search_one(iri="*Evento03"))
+onto.search_one(iri="*Premio03").dadoEm.append(onto.search_one(iri="*Evento03"))
+onto.search_one(iri="*Premio04").dadoEm.append(onto.search_one(iri="*Evento03"))
+onto.search_one(iri="*Premio05").dadoEm.append(onto.search_one(iri="*Evento03"))
+onto.search_one(iri="*Premio06").dadoEm.append(onto.search_one(iri="*Evento03"))
+onto.search_one(iri="*Premio07").dadoEm.append(onto.search_one(iri="*Evento03"))
+onto.search_one(iri="*Premio08").dadoEm.append(onto.search_one(iri="*Evento03"))
+
+onto.search_one(iri="*Premio01").dadoEm.append(onto.search_one(iri="*Evento04"))  # Globo de Ouro 1998
+onto.search_one(iri="*Premio02").dadoEm.append(onto.search_one(iri="*Evento04"))
+onto.search_one(iri="*Premio03").dadoEm.append(onto.search_one(iri="*Evento04"))
+onto.search_one(iri="*Premio04").dadoEm.append(onto.search_one(iri="*Evento04"))
+onto.search_one(iri="*Premio05").dadoEm.append(onto.search_one(iri="*Evento04"))
+onto.search_one(iri="*Premio06").dadoEm.append(onto.search_one(iri="*Evento04"))
+onto.search_one(iri="*Premio07").dadoEm.append(onto.search_one(iri="*Evento04"))
+onto.search_one(iri="*Premio08").dadoEm.append(onto.search_one(iri="*Evento04"))
 
 
 #print([filme.name for filme in onto.Filme.instances()])
