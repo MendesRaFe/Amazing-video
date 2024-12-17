@@ -164,6 +164,49 @@ filmes_e_atores = [
     {"filme": "O_Iluminado", "atores": ["Jack_Nicholson", "Shelley_Duvall"]}
 ]
 
+filmes_e_diretores = [
+    {"filme": "O_Poderoso_Chefao", "diretores": ["Francis_Ford_Coppola"]},
+    {"filme": "A_Origem", "diretores": ["Christopher_Nolan"]},
+    {"filme": "Titanic", "diretores": ["James_Cameron"]},
+    {"filme": "Forrest_Gump", "diretores": ["Robert_Zemeckis"]},
+    {"filme": "Matrix", "diretores": ["Lana_Wachowski", "Lilly_Wachowski"]},
+    {"filme": "O_Senhor_dos_Aneis:_A_Sociedade_do_Anel", "diretores": ["Peter_Jackson"]},
+    {"filme": "Vingadores:_Ultimato", "diretores": ["Anthony_Russo", "Joe_Russo"]},
+    {"filme": "Pantera_Negra", "diretores": ["Ryan_Coogler"]},
+    {"filme": "Homem-Aranha:_Sem_Volta_para_Casa", "diretores": ["Jon_Watts"]},
+    {"filme": "A_Bela_e_a_Fera", "diretores": ["Bill_Condon"]},
+    {"filme": "Gladiador", "diretores": ["Ridley_Scott"]},
+    {"filme": "Coringa", "diretores": ["Todd_Phillips"]},
+    {"filme": "Duna", "diretores": ["Denis_Villeneuve"]},
+    {"filme": "Star_Wars:_Uma_Nova_Esperanca", "diretores": ["George_Lucas"]},
+    {"filme": "Toy_Story", "diretores": ["John_Lasseter"]},
+    {"filme": "Harry_Potter_e_a_Pedra_Filosofal", "diretores": ["Chris_Columbus"]},
+    {"filme": "A_Lista_de_Schindler", "diretores": ["Steven_Spielberg"]},
+    {"filme": "Pulp_Fiction:_Tempo_de_Violencia", "diretores": ["Quentin_Tarantino"]},
+    {"filme": "O_Rei_Leao", "diretores": ["Roger_Allers", "Rob_Minkoff"]},
+    {"filme": "Procurando_Nemo", "diretores": ["Andrew_Stanton"]},
+    {"filme": "Os_Incriveis", "diretores": ["Brad_Bird"]},
+    {"filme": "Frozen:_Uma_Aventura_Congelante", "diretores": ["Chris_Buck", "Jennifer_Lee"]},
+    {"filme": "Encanto", "diretores": ["Jared_Bush", "Byron_Howard", "Charise_Castro_Smith"]},
+    {"filme": "Moana:_Um_Mar_de_Aventuras", "diretores": ["Ron_Clements", "John_Musker"]},
+    {"filme": "Carros", "diretores": ["John_Lasseter", "Joe_Ranft"]},
+    {"filme": "Divertida_Mente", "diretores": ["Pete_Docter", "Ronnie_del_Carmen"]},
+    {"filme": "Shrek", "diretores": ["Andrew_Adamson", "Vicky_Jenson"]},
+    {"filme": "Kung_Fu_Panda", "diretores": ["Mark_Osborne", "John_Stevenson"]},
+    {"filme": "Homem_de_Ferro", "diretores": ["Jon_Favreau"]},
+    {"filme": "Capitao_America:_O_Primeiro_Vingador", "diretores": ["Joe_Johnston"]},
+    {"filme": "Guardioes_da_Galaxia", "diretores": ["James_Gunn"]},
+    {"filme": "Thor:_Ragnarok", "diretores": ["Taika_Waititi"]},
+    {"filme": "Viuva_Negra", "diretores": ["Cate_Shortland"]},
+    {"filme": "Top_Gun:_Maverick", "diretores": ["Joseph_Kosinski"]},
+    {"filme": "Cisne_Negro", "diretores": ["Darren_Aronofsky"]},
+    {"filme": "A_Teoria_de_Tudo", "diretores": ["James_Marsh"]},
+    {"filme": "Bohemian_Rhapsody", "diretores": ["Bryan_Singer"]},
+    {"filme": "O_Exorcista", "diretores": ["William_Friedkin"]},
+    {"filme": "Psicose", "diretores": ["Alfred_Hitchcock"]},
+    {"filme": "O_Iluminado", "diretores": ["Stanley_Kubrick"]}
+]
+
 atores = [
     {"nome": "Marlon Brando"},
     {"nome": "Al Pacino"},
@@ -495,7 +538,6 @@ def usuario_temPreferencia_genero():
 # Chama a função
 usuario_temPreferencia_genero()
 
-
 def filme_atuadoPor_ator():
     for item in filmes_e_atores:
         filme = item["filme"]
@@ -511,19 +553,32 @@ def filme_atuadoPor_ator():
 
 filme_atuadoPor_ator()
 
-# print([filme.name for filme in onto.Filme.instances()])
+def filme_dirigidoPor_diretor():
+    for item in filmes_e_diretores:
+        filme = item["filme"]
+        diretores = item["diretores"]
+        filme = onto.Filme(filme)
+
+        for diretor in diretores:
+            # Busca os indivíduos na ontologia
+            diretor = onto.Diretor(diretor)
+
+            # Adiciona o ator ao filme
+            filme.dirigidoPor.append(diretor)
+
+filme_dirigidoPor_diretor()
+
+
+#print([filme.name for filme in onto.Filme.instances()])
 # print()
 # print([ator.name for ator in onto.Ator.instances()])
 
 
-# for atores in onto.Ator.instances():
-#     print(atores)
+#for diretores in onto.Diretor.instances():
+#    print(diretores)
 
 #print(dir(onto))
 #print(list(onto.properties()))
-
-
-
 
 # Salvar as alterações no RDF com identificadores únicos
 #onto.save(file="filmes_atualizado_com_ids.rdf")
