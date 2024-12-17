@@ -283,6 +283,12 @@
 <owl:NamedIndividual rdf:about="#O_Poderoso_Chefao">
   <rdf:type rdf:resource="#Filme"/>
   <possuiGenero rdf:resource="#FilmeDeSuspense"/>
+  <atuadoPor rdf:resource="#Marlon_Brando"/>
+  <atuadoPor rdf:resource="#Al_Pacino"/>
+  <dirigidoPor rdf:resource="#Francis_Ford_Coppola"/>
+  <conquistaPremio rdf:resource="#Premio01"/>
+  <conquistaPremio rdf:resource="#Premio02"/>
+  <conquistaPremio rdf:resource="#Premio03"/>
   <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O Poderoso Chefão</tituloPortugues>
   <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Godfather</tituloOriginal>
   <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1972</anoProducao>
@@ -294,6 +300,10 @@
 <owl:NamedIndividual rdf:about="#A_Origem">
   <rdf:type rdf:resource="#Filme"/>
   <possuiGenero rdf:resource="#FilmeDeFiccao"/>
+  <atuadoPor rdf:resource="#Leonardo_DiCaprio"/>
+  <atuadoPor rdf:resource="#Joseph_Gordon-Levitt"/>
+  <atuadoPor rdf:resource="#Ellen_Page"/>
+  <dirigidoPor rdf:resource="#Christopher_Nolan"/>
   <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Origem</tituloPortugues>
   <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inception</tituloOriginal>
   <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</anoProducao>
@@ -305,6 +315,12 @@
 <owl:NamedIndividual rdf:about="#Titanic">
   <rdf:type rdf:resource="#Filme"/>
   <possuiGenero rdf:resource="#FilmeDeSuspense"/>
+  <atuadoPor rdf:resource="#Leonardo_DiCaprio"/>
+  <atuadoPor rdf:resource="#Kate_Winslet"/>
+  <dirigidoPor rdf:resource="#James_Cameron"/>
+  <conquistaPremio rdf:resource="#Premio01"/>
+  <conquistaPremio rdf:resource="#Premio04"/>
+  <conquistaPremio rdf:resource="#Premio08"/>
   <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Titanic</tituloPortugues>
   <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Titanic</tituloOriginal>
   <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1997</anoProducao>
@@ -316,6 +332,9 @@
 <owl:NamedIndividual rdf:about="#Forrest_Gump">
   <rdf:type rdf:resource="#Filme"/>
   <possuiGenero rdf:resource="#FilmeDeComedia"/>
+  <atuadoPor rdf:resource="#Tom_Hanks"/>
+  <atuadoPor rdf:resource="#Robin_Wright"/>
+  <dirigidoPor rdf:resource="#Robert_Zemeckis"/>
   <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Forrest Gump</tituloPortugues>
   <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Forrest Gump</tituloOriginal>
   <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1994</anoProducao>
@@ -327,6 +346,13 @@
 <owl:NamedIndividual rdf:about="#Matrix">
   <rdf:type rdf:resource="#Filme"/>
   <possuiGenero rdf:resource="#FilmeDeFiccao"/>
+  <atuadoPor rdf:resource="#Keanu_Reeves"/>
+  <atuadoPor rdf:resource="#Laurence_Fishburne"/>
+  <atuadoPor rdf:resource="#Carrie-Anne_Moss"/>
+  <dirigidoPor rdf:resource="#Lana_Wachowski"/>
+  <dirigidoPor rdf:resource="#Lilly_Wachowski"/>
+  <conquistaPremio rdf:resource="#Premio06"/>
+  <conquistaPremio rdf:resource="#Premio07"/>
   <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matrix</tituloPortugues>
   <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Matrix</tituloOriginal>
   <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1999</anoProducao>
@@ -338,6 +364,12 @@
 <owl:NamedIndividual rdf:about="#O_Senhor_dos_Aneis:_A_Sociedade_do_Anel">
   <rdf:type rdf:resource="#Filme"/>
   <possuiGenero rdf:resource="#FilmeDeAcao"/>
+  <atuadoPor rdf:resource="#Elijah_Wood"/>
+  <atuadoPor rdf:resource="#Ian_McKellen"/>
+  <atuadoPor rdf:resource="#Viggo_Mortensen"/>
+  <dirigidoPor rdf:resource="#Peter_Jackson"/>
+  <conquistaPremio rdf:resource="#Premio07"/>
+  <conquistaPremio rdf:resource="#Premio05"/>
   <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O Senhor dos Anéis: A Sociedade do Anel</tituloPortugues>
   <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Lord of the Rings: The Fellowship of the Ring</tituloOriginal>
   <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2001</anoProducao>
@@ -349,6 +381,11 @@
 <owl:NamedIndividual rdf:about="#Vingadores:_Ultimato">
   <rdf:type rdf:resource="#Filme"/>
   <possuiGenero rdf:resource="#FilmeDeAcao"/>
+  <atuadoPor rdf:resource="#Robert_Downey_Jr."/>
+  <atuadoPor rdf:resource="#Chris_Evans"/>
+  <atuadoPor rdf:resource="#Scarlett_Johansson"/>
+  <dirigidoPor rdf:resource="#Anthony_Russo"/>
+  <dirigidoPor rdf:resource="#Joe_Russo"/>
   <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vingadores: Ultimato</tituloPortugues>
   <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Avengers: Endgame</tituloOriginal>
   <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2019</anoProducao>
@@ -360,6 +397,9 @@
 <owl:NamedIndividual rdf:about="#Pantera_Negra">
   <rdf:type rdf:resource="#Filme"/>
   <possuiGenero rdf:resource="#FilmeDeAcao"/>
+  <atuadoPor rdf:resource="#Chadwick_Boseman"/>
+  <atuadoPor rdf:resource="#Michael_B._Jordan"/>
+  <dirigidoPor rdf:resource="#Ryan_Coogler"/>
   <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pantera Negra</tituloPortugues>
   <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black Panther</tituloOriginal>
   <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2018</anoProducao>
@@ -371,6 +411,10 @@
 <owl:NamedIndividual rdf:about="#Homem-Aranha:_Sem_Volta_para_Casa">
   <rdf:type rdf:resource="#Filme"/>
   <possuiGenero rdf:resource="#FilmeDeAcao"/>
+  <atuadoPor rdf:resource="#Tom_Holland"/>
+  <atuadoPor rdf:resource="#Benedict_Cumberbatch"/>
+  <atuadoPor rdf:resource="#Zendaya"/>
+  <dirigidoPor rdf:resource="#Jon_Watts"/>
   <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Homem-Aranha: Sem Volta para Casa</tituloPortugues>
   <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spider-Man: No Way Home</tituloOriginal>
   <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2021</anoProducao>
@@ -382,6 +426,9 @@
 <owl:NamedIndividual rdf:about="#A_Bela_e_a_Fera">
   <rdf:type rdf:resource="#Filme"/>
   <possuiGenero rdf:resource="#FilmeMusical"/>
+  <atuadoPor rdf:resource="#Emma_Watson"/>
+  <atuadoPor rdf:resource="#Dan_Stevens"/>
+  <dirigidoPor rdf:resource="#Bill_Condon"/>
   <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Bela e a Fera</tituloPortugues>
   <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beauty and the Beast</tituloOriginal>
   <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2017</anoProducao>
@@ -393,6 +440,10 @@
 <owl:NamedIndividual rdf:about="#Gladiador">
   <rdf:type rdf:resource="#Filme"/>
   <possuiGenero rdf:resource="#FilmeDeAcao"/>
+  <atuadoPor rdf:resource="#Russell_Crowe"/>
+  <atuadoPor rdf:resource="#Joaquin_Phoenix"/>
+  <atuadoPor rdf:resource="#Connie_Nielsen"/>
+  <dirigidoPor rdf:resource="#Ridley_Scott"/>
   <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gladiador</tituloPortugues>
   <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gladiator</tituloOriginal>
   <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</anoProducao>
@@ -404,6 +455,10 @@
 <owl:NamedIndividual rdf:about="#Coringa">
   <rdf:type rdf:resource="#Filme"/>
   <possuiGenero rdf:resource="#FilmeDeSuspense"/>
+  <atuadoPor rdf:resource="#Joaquin_Phoenix"/>
+  <dirigidoPor rdf:resource="#Todd_Phillips"/>
+  <conquistaPremio rdf:resource="#Premio02"/>
+  <conquistaPremio rdf:resource="#Premio08"/>
   <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coringa</tituloPortugues>
   <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joker</tituloOriginal>
   <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2019</anoProducao>
@@ -415,6 +470,9 @@
 <owl:NamedIndividual rdf:about="#Duna">
   <rdf:type rdf:resource="#Filme"/>
   <possuiGenero rdf:resource="#FilmeDeFiccao"/>
+  <atuadoPor rdf:resource="#Timothee_Chalamet"/>
+  <atuadoPor rdf:resource="#Oscar_Isaac"/>
+  <dirigidoPor rdf:resource="#Denis_Villeneuve"/>
   <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Duna</tituloPortugues>
   <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dune</tituloOriginal>
   <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2021</anoProducao>
@@ -426,6 +484,10 @@
 <owl:NamedIndividual rdf:about="#Star_Wars:_Uma_Nova_Esperanca">
   <rdf:type rdf:resource="#Filme"/>
   <possuiGenero rdf:resource="#FilmeDeFiccao"/>
+  <atuadoPor rdf:resource="#Mark_Hamill"/>
+  <atuadoPor rdf:resource="#Harrison_Ford"/>
+  <atuadoPor rdf:resource="#Carrie_Fisher"/>
+  <dirigidoPor rdf:resource="#George_Lucas"/>
   <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Star Wars: Uma Nova Esperança</tituloPortugues>
   <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Star Wars: A New Hope</tituloOriginal>
   <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1977</anoProducao>
@@ -437,6 +499,9 @@
 <owl:NamedIndividual rdf:about="#Interestelar">
   <rdf:type rdf:resource="#Filme"/>
   <possuiGenero rdf:resource="#FilmeDeFiccao"/>
+  <atuadoPor rdf:resource="#Matthew_McConaughey"/>
+  <atuadoPor rdf:resource="#Anne_Hathaway"/>
+  <atuadoPor rdf:resource="#Jessica_Chastain"/>
   <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Interestelar</tituloPortugues>
   <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Interstellar</tituloOriginal>
   <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2014</anoProducao>
@@ -448,6 +513,9 @@
 <owl:NamedIndividual rdf:about="#Toy_Story">
   <rdf:type rdf:resource="#Filme"/>
   <possuiGenero rdf:resource="#FilmeDeComedia"/>
+  <atuadoPor rdf:resource="#Tim_Allen"/>
+  <atuadoPor rdf:resource="#Tom_Hanks"/>
+  <dirigidoPor rdf:resource="#John_Lasseter"/>
   <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Toy Story</tituloPortugues>
   <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Toy Story</tituloOriginal>
   <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1995</anoProducao>
@@ -459,6 +527,10 @@
 <owl:NamedIndividual rdf:about="#Harry_Potter_e_a_Pedra_Filosofal">
   <rdf:type rdf:resource="#Filme"/>
   <possuiGenero rdf:resource="#FilmeDeFiccao"/>
+  <atuadoPor rdf:resource="#Daniel_Radcliffe"/>
+  <atuadoPor rdf:resource="#Rupert_Grint"/>
+  <atuadoPor rdf:resource="#Emma_Watson"/>
+  <dirigidoPor rdf:resource="#Chris_Columbus"/>
   <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harry Potter e a Pedra Filosofal</tituloPortugues>
   <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harry Potter and the Sorcerer's Stone</tituloOriginal>
   <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2001</anoProducao>
@@ -470,6 +542,10 @@
 <owl:NamedIndividual rdf:about="#A_Lista_de_Schindler">
   <rdf:type rdf:resource="#Filme"/>
   <possuiGenero rdf:resource="#FilmeDeSuspense"/>
+  <atuadoPor rdf:resource="#Liam_Neeson"/>
+  <atuadoPor rdf:resource="#Ben_Kingsley"/>
+  <atuadoPor rdf:resource="#Ralph_Fiennes"/>
+  <dirigidoPor rdf:resource="#Steven_Spielberg"/>
   <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Lista de Schindler</tituloPortugues>
   <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Schindler's List</tituloOriginal>
   <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1993</anoProducao>
@@ -481,6 +557,10 @@
 <owl:NamedIndividual rdf:about="#Pulp_Fiction:_Tempo_de_Violencia">
   <rdf:type rdf:resource="#Filme"/>
   <possuiGenero rdf:resource="#FilmeDeSuspense"/>
+  <atuadoPor rdf:resource="#John_Travolta"/>
+  <atuadoPor rdf:resource="#Uma_Thurman"/>
+  <atuadoPor rdf:resource="#Samuel_L._Jackson"/>
+  <dirigidoPor rdf:resource="#Quentin_Tarantino"/>
   <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pulp Fiction: Tempo de Violência</tituloPortugues>
   <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pulp Fiction</tituloOriginal>
   <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1994</anoProducao>
@@ -492,6 +572,10 @@
 <owl:NamedIndividual rdf:about="#O_Rei_Leao">
   <rdf:type rdf:resource="#Filme"/>
   <possuiGenero rdf:resource="#FilmeMusical"/>
+  <atuadoPor rdf:resource="#Matthew_Broderick"/>
+  <atuadoPor rdf:resource="#James_Earl_Jones"/>
+  <dirigidoPor rdf:resource="#Roger_Allers"/>
+  <dirigidoPor rdf:resource="#Rob_Minkoff"/>
   <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O Rei Leão</tituloPortugues>
   <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Lion King</tituloOriginal>
   <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1994</anoProducao>
@@ -503,6 +587,9 @@
 <owl:NamedIndividual rdf:about="#Procurando_Nemo">
   <rdf:type rdf:resource="#Filme"/>
   <possuiGenero rdf:resource="#FilmeDeComedia"/>
+  <atuadoPor rdf:resource="#Albert_Brooks"/>
+  <atuadoPor rdf:resource="#Ellen_DeGeneres"/>
+  <dirigidoPor rdf:resource="#Andrew_Stanton"/>
   <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Procurando Nemo</tituloPortugues>
   <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Finding Nemo</tituloOriginal>
   <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2003</anoProducao>
@@ -514,6 +601,9 @@
 <owl:NamedIndividual rdf:about="#Os_Incriveis">
   <rdf:type rdf:resource="#Filme"/>
   <possuiGenero rdf:resource="#FilmeDeAcao"/>
+  <atuadoPor rdf:resource="#Craig_T._Nelson"/>
+  <atuadoPor rdf:resource="#Holly_Hunter"/>
+  <dirigidoPor rdf:resource="#Brad_Bird"/>
   <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Os Incríveis</tituloPortugues>
   <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Incredibles</tituloOriginal>
   <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2004</anoProducao>
@@ -525,6 +615,10 @@
 <owl:NamedIndividual rdf:about="#Frozen:_Uma_Aventura_Congelante">
   <rdf:type rdf:resource="#Filme"/>
   <possuiGenero rdf:resource="#FilmeMusical"/>
+  <atuadoPor rdf:resource="#Kristen_Bell"/>
+  <atuadoPor rdf:resource="#Idina_Menzel"/>
+  <dirigidoPor rdf:resource="#Chris_Buck"/>
+  <dirigidoPor rdf:resource="#Jennifer_Lee"/>
   <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frozen: Uma Aventura Congelante</tituloPortugues>
   <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frozen</tituloOriginal>
   <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2013</anoProducao>
@@ -536,6 +630,11 @@
 <owl:NamedIndividual rdf:about="#Encanto">
   <rdf:type rdf:resource="#Filme"/>
   <possuiGenero rdf:resource="#FilmeMusical"/>
+  <atuadoPor rdf:resource="#Stephanie_Beatriz"/>
+  <atuadoPor rdf:resource="#Maria_Cecilia_Botero"/>
+  <dirigidoPor rdf:resource="#Jared_Bush"/>
+  <dirigidoPor rdf:resource="#Byron_Howard"/>
+  <dirigidoPor rdf:resource="#Charise_Castro_Smith"/>
   <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Encanto</tituloPortugues>
   <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Encanto</tituloOriginal>
   <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2021</anoProducao>
@@ -547,6 +646,10 @@
 <owl:NamedIndividual rdf:about="#Moana:_Um_Mar_de_Aventuras">
   <rdf:type rdf:resource="#Filme"/>
   <possuiGenero rdf:resource="#FilmeMusical"/>
+  <atuadoPor rdf:resource="#Auli'i_Cravalho"/>
+  <atuadoPor rdf:resource="#Dwayne_Johnson"/>
+  <dirigidoPor rdf:resource="#Ron_Clements"/>
+  <dirigidoPor rdf:resource="#John_Musker"/>
   <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Moana: Um Mar de Aventuras</tituloPortugues>
   <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Moana</tituloOriginal>
   <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</anoProducao>
@@ -558,6 +661,10 @@
 <owl:NamedIndividual rdf:about="#Carros">
   <rdf:type rdf:resource="#Filme"/>
   <possuiGenero rdf:resource="#FilmeDeComedia"/>
+  <atuadoPor rdf:resource="#Owen_Wilson"/>
+  <atuadoPor rdf:resource="#Larry_the_Cable_Guy"/>
+  <dirigidoPor rdf:resource="#John_Lasseter"/>
+  <dirigidoPor rdf:resource="#Joe_Ranft"/>
   <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carros</tituloPortugues>
   <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cars</tituloOriginal>
   <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2006</anoProducao>
@@ -569,6 +676,10 @@
 <owl:NamedIndividual rdf:about="#Divertida_Mente">
   <rdf:type rdf:resource="#Filme"/>
   <possuiGenero rdf:resource="#FilmeDeComedia"/>
+  <atuadoPor rdf:resource="#Amy_Poehler"/>
+  <atuadoPor rdf:resource="#Phyllis_Smith"/>
+  <dirigidoPor rdf:resource="#Pete_Docter"/>
+  <dirigidoPor rdf:resource="#Ronnie_del_Carmen"/>
   <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Divertida Mente</tituloPortugues>
   <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inside Out</tituloOriginal>
   <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2015</anoProducao>
@@ -580,6 +691,10 @@
 <owl:NamedIndividual rdf:about="#Shrek">
   <rdf:type rdf:resource="#Filme"/>
   <possuiGenero rdf:resource="#FilmeDeComedia"/>
+  <atuadoPor rdf:resource="#Mike_Myers"/>
+  <atuadoPor rdf:resource="#Eddie_Murphy"/>
+  <dirigidoPor rdf:resource="#Andrew_Adamson"/>
+  <dirigidoPor rdf:resource="#Vicky_Jenson"/>
   <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shrek</tituloPortugues>
   <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shrek</tituloOriginal>
   <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2001</anoProducao>
@@ -591,6 +706,10 @@
 <owl:NamedIndividual rdf:about="#Kung_Fu_Panda">
   <rdf:type rdf:resource="#Filme"/>
   <possuiGenero rdf:resource="#FilmeDeAcao"/>
+  <atuadoPor rdf:resource="#Jack_Black"/>
+  <atuadoPor rdf:resource="#Dustin_Hoffman"/>
+  <dirigidoPor rdf:resource="#Mark_Osborne"/>
+  <dirigidoPor rdf:resource="#John_Stevenson"/>
   <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kung Fu Panda</tituloPortugues>
   <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kung Fu Panda</tituloOriginal>
   <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2008</anoProducao>
@@ -602,6 +721,9 @@
 <owl:NamedIndividual rdf:about="#Homem_de_Ferro">
   <rdf:type rdf:resource="#Filme"/>
   <possuiGenero rdf:resource="#FilmeDeAcao"/>
+  <atuadoPor rdf:resource="#Robert_Downey_Jr."/>
+  <atuadoPor rdf:resource="#Gwyneth_Paltrow"/>
+  <dirigidoPor rdf:resource="#Jon_Favreau"/>
   <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Homem de Ferro</tituloPortugues>
   <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iron Man</tituloOriginal>
   <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2008</anoProducao>
@@ -613,6 +735,9 @@
 <owl:NamedIndividual rdf:about="#Capitao_America:_O_Primeiro_Vingador">
   <rdf:type rdf:resource="#Filme"/>
   <possuiGenero rdf:resource="#FilmeDeAcao"/>
+  <atuadoPor rdf:resource="#Chris_Evans"/>
+  <atuadoPor rdf:resource="#Hayley_Atwell"/>
+  <dirigidoPor rdf:resource="#Joe_Johnston"/>
   <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Capitão América: O Primeiro Vingador</tituloPortugues>
   <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Captain America: The First Avenger</tituloOriginal>
   <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2011</anoProducao>
@@ -624,6 +749,10 @@
 <owl:NamedIndividual rdf:about="#Guardioes_da_Galaxia">
   <rdf:type rdf:resource="#Filme"/>
   <possuiGenero rdf:resource="#FilmeDeAcao"/>
+  <atuadoPor rdf:resource="#Chris_Pratt"/>
+  <atuadoPor rdf:resource="#Zoe_Saldana"/>
+  <atuadoPor rdf:resource="#Dave_Bautista"/>
+  <dirigidoPor rdf:resource="#James_Gunn"/>
   <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Guardiões da Galáxia</tituloPortugues>
   <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Guardians of the Galaxy</tituloOriginal>
   <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2014</anoProducao>
@@ -635,6 +764,10 @@
 <owl:NamedIndividual rdf:about="#Thor:_Ragnarok">
   <rdf:type rdf:resource="#Filme"/>
   <possuiGenero rdf:resource="#FilmeDeAcao"/>
+  <atuadoPor rdf:resource="#Chris_Hemsworth"/>
+  <atuadoPor rdf:resource="#Tom_Hiddleston"/>
+  <atuadoPor rdf:resource="#Cate_Blanchett"/>
+  <dirigidoPor rdf:resource="#Taika_Waititi"/>
   <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thor: Ragnarok</tituloPortugues>
   <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thor: Ragnarok</tituloOriginal>
   <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2017</anoProducao>
@@ -646,6 +779,9 @@
 <owl:NamedIndividual rdf:about="#Viuva_Negra">
   <rdf:type rdf:resource="#Filme"/>
   <possuiGenero rdf:resource="#FilmeDeAcao"/>
+  <atuadoPor rdf:resource="#Scarlett_Johansson"/>
+  <atuadoPor rdf:resource="#Florence_Pugh"/>
+  <dirigidoPor rdf:resource="#Cate_Shortland"/>
   <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Viúva Negra</tituloPortugues>
   <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black Widow</tituloOriginal>
   <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2021</anoProducao>
@@ -657,6 +793,8 @@
 <owl:NamedIndividual rdf:about="#Avatar">
   <rdf:type rdf:resource="#Filme"/>
   <possuiGenero rdf:resource="#FilmeDeFiccao"/>
+  <atuadoPor rdf:resource="#Sam_Worthington"/>
+  <atuadoPor rdf:resource="#Sigourney_Weaver"/>
   <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Avatar</tituloPortugues>
   <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Avatar</tituloOriginal>
   <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2009</anoProducao>
@@ -668,6 +806,9 @@
 <owl:NamedIndividual rdf:about="#Top_Gun:_Maverick">
   <rdf:type rdf:resource="#Filme"/>
   <possuiGenero rdf:resource="#FilmeDeAcao"/>
+  <atuadoPor rdf:resource="#Tom_Cruise"/>
+  <atuadoPor rdf:resource="#Miles_Teller"/>
+  <dirigidoPor rdf:resource="#Joseph_Kosinski"/>
   <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Top Gun: Maverick</tituloPortugues>
   <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Top Gun: Maverick</tituloOriginal>
   <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2022</anoProducao>
@@ -679,6 +820,9 @@
 <owl:NamedIndividual rdf:about="#Cisne_Negro">
   <rdf:type rdf:resource="#Filme"/>
   <possuiGenero rdf:resource="#FilmeDeSuspense"/>
+  <atuadoPor rdf:resource="#Natalie_Portman"/>
+  <atuadoPor rdf:resource="#Mila_Kunis"/>
+  <dirigidoPor rdf:resource="#Darren_Aronofsky"/>
   <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cisne Negro</tituloPortugues>
   <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black Swan</tituloOriginal>
   <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</anoProducao>
@@ -690,6 +834,9 @@
 <owl:NamedIndividual rdf:about="#A_Teoria_de_Tudo">
   <rdf:type rdf:resource="#Filme"/>
   <possuiGenero rdf:resource="#FilmeDeSuspense"/>
+  <atuadoPor rdf:resource="#Eddie_Redmayne"/>
+  <atuadoPor rdf:resource="#Felicity_Jones"/>
+  <dirigidoPor rdf:resource="#James_Marsh"/>
   <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Teoria de Tudo</tituloPortugues>
   <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Theory of Everything</tituloOriginal>
   <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2014</anoProducao>
@@ -701,6 +848,9 @@
 <owl:NamedIndividual rdf:about="#Bohemian_Rhapsody">
   <rdf:type rdf:resource="#Filme"/>
   <possuiGenero rdf:resource="#FilmeMusical"/>
+  <atuadoPor rdf:resource="#Rami_Malek"/>
+  <atuadoPor rdf:resource="#Lucy_Boynton"/>
+  <dirigidoPor rdf:resource="#Bryan_Singer"/>
   <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bohemian Rhapsody</tituloPortugues>
   <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bohemian Rhapsody</tituloOriginal>
   <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2018</anoProducao>
@@ -712,6 +862,9 @@
 <owl:NamedIndividual rdf:about="#O_Exorcista">
   <rdf:type rdf:resource="#Filme"/>
   <possuiGenero rdf:resource="#FilmeDeTerror"/>
+  <atuadoPor rdf:resource="#Linda_Blair"/>
+  <atuadoPor rdf:resource="#Max_von_Sydow"/>
+  <dirigidoPor rdf:resource="#William_Friedkin"/>
   <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O Exorcista</tituloPortugues>
   <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Exorcist</tituloOriginal>
   <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1973</anoProducao>
@@ -723,6 +876,9 @@
 <owl:NamedIndividual rdf:about="#Psicose">
   <rdf:type rdf:resource="#Filme"/>
   <possuiGenero rdf:resource="#FilmeDeTerror"/>
+  <atuadoPor rdf:resource="#Anthony_Perkins"/>
+  <atuadoPor rdf:resource="#Janet_Leigh"/>
+  <dirigidoPor rdf:resource="#Alfred_Hitchcock"/>
   <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Psicose</tituloPortugues>
   <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Psycho</tituloOriginal>
   <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1960</anoProducao>
@@ -734,6 +890,9 @@
 <owl:NamedIndividual rdf:about="#O_Iluminado">
   <rdf:type rdf:resource="#Filme"/>
   <possuiGenero rdf:resource="#FilmeDeTerror"/>
+  <atuadoPor rdf:resource="#Jack_Nicholson"/>
+  <atuadoPor rdf:resource="#Shelley_Duvall"/>
+  <dirigidoPor rdf:resource="#Stanley_Kubrick"/>
   <tituloPortugues rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O Iluminado</tituloPortugues>
   <tituloOriginal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Shining</tituloOriginal>
   <anoProducao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1980</anoProducao>
@@ -753,7 +912,7 @@
 
 <owl:NamedIndividual rdf:about="#Maria">
   <rdf:type rdf:resource="#Usuario"/>
-  <temPreferencia rdf:resource="#FilmeMusical"/>
+  <temPreferencia rdf:resource="#FilmeDeComedia"/>
   <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maria</nome>
   <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">maria@exemplo.com</email>
   <telefone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9999-2222</telefone>
@@ -762,7 +921,7 @@
 
 <owl:NamedIndividual rdf:about="#Carlos">
   <rdf:type rdf:resource="#Usuario"/>
-  <temPreferencia rdf:resource="#FilmeDeSuspense"/>
+  <temPreferencia rdf:resource="#FilmeDeAcao"/>
   <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carlos</nome>
   <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carlos@exemplo.com</email>
   <telefone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9999-3333</telefone>
@@ -771,7 +930,7 @@
 
 <owl:NamedIndividual rdf:about="#Ana">
   <rdf:type rdf:resource="#Usuario"/>
-  <temPreferencia rdf:resource="#FilmeDeAcao"/>
+  <temPreferencia rdf:resource="#FilmeDeTerror"/>
   <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ana</nome>
   <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ana@exemplo.com</email>
   <telefone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9999-4444</telefone>
@@ -780,7 +939,7 @@
 
 <owl:NamedIndividual rdf:about="#Lucas">
   <rdf:type rdf:resource="#Usuario"/>
-  <temPreferencia rdf:resource="#FilmeMusical"/>
+  <temPreferencia rdf:resource="#FilmeDeComedia"/>
   <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lucas</nome>
   <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lucas@exemplo.com</email>
   <telefone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9999-5555</telefone>
@@ -798,7 +957,7 @@
 
 <owl:NamedIndividual rdf:about="#Paulo">
   <rdf:type rdf:resource="#Usuario"/>
-  <temPreferencia rdf:resource="#FilmeDeTerror"/>
+  <temPreferencia rdf:resource="#FilmeDeComedia"/>
   <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paulo</nome>
   <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">paulo@exemplo.com</email>
   <telefone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9999-7777</telefone>
@@ -807,7 +966,7 @@
 
 <owl:NamedIndividual rdf:about="#Mariana">
   <rdf:type rdf:resource="#Usuario"/>
-  <temPreferencia rdf:resource="#FilmeDeAcao"/>
+  <temPreferencia rdf:resource="#FilmeDeFiccao"/>
   <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mariana</nome>
   <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mariana@exemplo.com</email>
   <telefone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9999-8888</telefone>
@@ -816,7 +975,7 @@
 
 <owl:NamedIndividual rdf:about="#Ricardo">
   <rdf:type rdf:resource="#Usuario"/>
-  <temPreferencia rdf:resource="#FilmeDeComedia"/>
+  <temPreferencia rdf:resource="#FilmeDeAcao"/>
   <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ricardo</nome>
   <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ricardo@exemplo.com</email>
   <telefone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9999-9999</telefone>
@@ -825,7 +984,7 @@
 
 <owl:NamedIndividual rdf:about="#Fernanda">
   <rdf:type rdf:resource="#Usuario"/>
-  <temPreferencia rdf:resource="#FilmeDeSuspense"/>
+  <temPreferencia rdf:resource="#FilmeMusical"/>
   <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fernanda</nome>
   <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fernanda@exemplo.com</email>
   <telefone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9888-1111</telefone>
@@ -834,7 +993,7 @@
 
 <owl:NamedIndividual rdf:about="#Juliana">
   <rdf:type rdf:resource="#Usuario"/>
-  <temPreferencia rdf:resource="#FilmeDeAcao"/>
+  <temPreferencia rdf:resource="#FilmeDeSuspense"/>
   <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Juliana</nome>
   <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">juliana@exemplo.com</email>
   <telefone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9888-2222</telefone>
@@ -843,7 +1002,7 @@
 
 <owl:NamedIndividual rdf:about="#Gabriel">
   <rdf:type rdf:resource="#Usuario"/>
-  <temPreferencia rdf:resource="#FilmeDeComedia"/>
+  <temPreferencia rdf:resource="#FilmeDeSuspense"/>
   <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gabriel</nome>
   <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gabriel@exemplo.com</email>
   <telefone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9888-3333</telefone>
@@ -852,7 +1011,7 @@
 
 <owl:NamedIndividual rdf:about="#Roberta">
   <rdf:type rdf:resource="#Usuario"/>
-  <temPreferencia rdf:resource="#FilmeDeTerror"/>
+  <temPreferencia rdf:resource="#FilmeMusical"/>
   <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Roberta</nome>
   <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">roberta@exemplo.com</email>
   <telefone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9888-4444</telefone>
@@ -861,7 +1020,7 @@
 
 <owl:NamedIndividual rdf:about="#Eduardo">
   <rdf:type rdf:resource="#Usuario"/>
-  <temPreferencia rdf:resource="#FilmeMusical"/>
+  <temPreferencia rdf:resource="#FilmeDeTerror"/>
   <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eduardo</nome>
   <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eduardo@exemplo.com</email>
   <telefone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9888-5555</telefone>
@@ -870,7 +1029,7 @@
 
 <owl:NamedIndividual rdf:about="#Simone">
   <rdf:type rdf:resource="#Usuario"/>
-  <temPreferencia rdf:resource="#FilmeDeSuspense"/>
+  <temPreferencia rdf:resource="#FilmeMusical"/>
   <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Simone</nome>
   <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">simone@exemplo.com</email>
   <telefone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9888-6666</telefone>
@@ -1272,6 +1431,11 @@
   <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sigourney Weaver</nome>
 </owl:NamedIndividual>
 
+<owl:NamedIndividual rdf:about="#Tom_Cruise">
+  <rdf:type rdf:resource="#Ator"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tom Cruise</nome>
+</owl:NamedIndividual>
+
 <owl:NamedIndividual rdf:about="#Miles_Teller">
   <rdf:type rdf:resource="#Ator"/>
   <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Miles Teller</nome>
@@ -1594,56 +1758,67 @@
 
 <owl:NamedIndividual rdf:about="#Produtor01">
   <rdf:type rdf:resource="#Produtor"/>
+  <produzFilme rdf:resource="#A_Origem"/>
   <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Emma Thomas</nome>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Produtor02">
   <rdf:type rdf:resource="#Produtor"/>
+  <produzFilme rdf:resource="#Titanic"/>
   <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jon Landau</nome>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Produtor03">
   <rdf:type rdf:resource="#Produtor"/>
+  <produzFilme rdf:resource="#Forrest_Gump"/>
   <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wendy Finerman</nome>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Produtor04">
   <rdf:type rdf:resource="#Produtor"/>
+  <produzFilme rdf:resource="#Forrest_Gump"/>
   <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Steve Tisch</nome>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Produtor05">
   <rdf:type rdf:resource="#Produtor"/>
+  <produzFilme rdf:resource="#Matrix"/>
   <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joel Silver</nome>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Roreirista01">
+<owl:NamedIndividual rdf:about="#Roteirista01">
   <rdf:type rdf:resource="#Roteirista"/>
+  <criaRoteiro rdf:resource="#Divertida_Mente"/>
   <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pete Docter</nome>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Roteirista02">
   <rdf:type rdf:resource="#Roteirista"/>
+  <criaRoteiro rdf:resource="#Shrek"/>
   <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Elliott</nome>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Roteirista03">
   <rdf:type rdf:resource="#Roteirista"/>
+  <criaRoteiro rdf:resource="#Kung_Fu_Panda"/>
   <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jonathan Aibel</nome>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Roteirista04">
   <rdf:type rdf:resource="#Roteirista"/>
+  <criaRoteiro rdf:resource="#Homem_de_Ferro"/>
   <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Art Marcum</nome>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Roteirista05">
   <rdf:type rdf:resource="#Roteirista"/>
+  <criaRoteiro rdf:resource="#Homem_de_Ferro"/>
   <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matt Holloway</nome>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Roteirista06">
   <rdf:type rdf:resource="#Roteirista"/>
+  <criaRoteiro rdf:resource="#Capitao_America:_O_Primeiro_Vingador"/>
   <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Christopher Markus</nome>
 </owl:NamedIndividual>
 
@@ -1723,37 +1898,73 @@
 
 <owl:NamedIndividual rdf:about="#Premio01">
   <rdf:type rdf:resource="#Premio"/>
+  <dadoEm rdf:resource="#Evento01"/>
+  <dadoEm rdf:resource="#Evento02"/>
+  <dadoEm rdf:resource="#Evento03"/>
+  <dadoEm rdf:resource="#Evento04"/>
   <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Melhor Filme</nome>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Premio02">
   <rdf:type rdf:resource="#Premio"/>
+  <dadoEm rdf:resource="#Evento01"/>
+  <dadoEm rdf:resource="#Evento02"/>
+  <dadoEm rdf:resource="#Evento03"/>
+  <dadoEm rdf:resource="#Evento04"/>
   <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Melhor Ator</nome>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Premio03">
   <rdf:type rdf:resource="#Premio"/>
-  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Melhor Roteiro Adaptado</nome>
+  <dadoEm rdf:resource="#Evento01"/>
+  <dadoEm rdf:resource="#Evento02"/>
+  <dadoEm rdf:resource="#Evento03"/>
+  <dadoEm rdf:resource="#Evento04"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Melhor Roteiro</nome>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Premio04">
   <rdf:type rdf:resource="#Premio"/>
+  <dadoEm rdf:resource="#Evento01"/>
+  <dadoEm rdf:resource="#Evento02"/>
+  <dadoEm rdf:resource="#Evento03"/>
+  <dadoEm rdf:resource="#Evento04"/>
   <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Melhor Diretor</nome>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Premio05">
   <rdf:type rdf:resource="#Premio"/>
+  <dadoEm rdf:resource="#Evento01"/>
+  <dadoEm rdf:resource="#Evento02"/>
+  <dadoEm rdf:resource="#Evento03"/>
+  <dadoEm rdf:resource="#Evento04"/>
   <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Melhor Fotografia</nome>
-  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Melhor Edição</nome>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Premio06">
   <rdf:type rdf:resource="#Premio"/>
-  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Melhor Efeitos Visuais</nome>
+  <dadoEm rdf:resource="#Evento01"/>
+  <dadoEm rdf:resource="#Evento02"/>
+  <dadoEm rdf:resource="#Evento03"/>
+  <dadoEm rdf:resource="#Evento04"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Melhor Edição</nome>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Premio07">
   <rdf:type rdf:resource="#Premio"/>
+  <dadoEm rdf:resource="#Evento01"/>
+  <dadoEm rdf:resource="#Evento02"/>
+  <dadoEm rdf:resource="#Evento03"/>
+  <dadoEm rdf:resource="#Evento04"/>
+  <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Melhor Efeitos Visuais</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Premio08">
+  <rdf:type rdf:resource="#Premio"/>
+  <dadoEm rdf:resource="#Evento01"/>
+  <dadoEm rdf:resource="#Evento02"/>
+  <dadoEm rdf:resource="#Evento03"/>
+  <dadoEm rdf:resource="#Evento04"/>
   <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Melhor Trilha Sonora</nome>
 </owl:NamedIndividual>
 

@@ -427,7 +427,7 @@ produtor.nome.append('Joel Silver')
 
 
 # Adiciona Roteirista
-roteirista = onto.Roteirista('Roreirista01')
+roteirista = onto.Roteirista('Roteirista01')
 roteirista.nome.append('Pete Docter')
 
 roteirista = onto.Roteirista('Roteirista02')
@@ -625,6 +625,23 @@ onto.search_one(iri="*Premio07").dadoEm.append(onto.search_one(iri="*Evento04"))
 onto.search_one(iri="*Premio08").dadoEm.append(onto.search_one(iri="*Evento04"))
 
 
+# Adiciona propriedade entre produtor e filme
+onto.search_one(iri="*Produtor01").produzFilme.append(onto.search_one(iri="*A_Origem"))  
+onto.search_one(iri="*Produtor02").produzFilme.append(onto.search_one(iri="*Titanic"))
+onto.search_one(iri="*Produtor03").produzFilme.append(onto.search_one(iri="*Forrest_Gump"))
+onto.search_one(iri="*Produtor04").produzFilme.append(onto.search_one(iri="*Forrest_Gump"))
+onto.search_one(iri="*Produtor05").produzFilme.append(onto.search_one(iri="*Matrix"))
+
+
+# Adiciona propriedade entre roteirista e filme
+onto.search_one(iri="*Roteirista01").criaRoteiro.append(onto.search_one(iri="*Divertida_Mente"))  
+onto.search_one(iri="*Roteirista02").criaRoteiro.append(onto.search_one(iri="*Shrek"))
+onto.search_one(iri="*Roteirista03").criaRoteiro.append(onto.search_one(iri="*Kung_Fu_Panda"))
+onto.search_one(iri="*Roteirista04").criaRoteiro.append(onto.search_one(iri="*Homem_de_Ferro"))
+onto.search_one(iri="*Roteirista05").criaRoteiro.append(onto.search_one(iri="*Homem_de_Ferro"))
+onto.search_one(iri="*Roteirista06").criaRoteiro.append(onto.search_one(iri="*Capitao_America:_O_Primeiro_Vingador"))
+
+
 #print([filme.name for filme in onto.Filme.instances()])
 # print()
 # print([ator.name for ator in onto.Ator.instances()])
@@ -637,4 +654,4 @@ onto.search_one(iri="*Premio08").dadoEm.append(onto.search_one(iri="*Evento04"))
 #print(list(onto.properties()))
 
 # Salvar as alterações no RDF com identificadores únicos
-#onto.save(file="filmes_atualizado_com_ids.rdf")
+onto.save(file="filmes_atualizado_com_ids.rdf")
