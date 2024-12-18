@@ -912,7 +912,7 @@
 
 <owl:NamedIndividual rdf:about="#Maria">
   <rdf:type rdf:resource="#Usuario"/>
-  <temPreferencia rdf:resource="#FilmeDeComedia"/>
+  <temPreferencia rdf:resource="#FilmeMusical"/>
   <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maria</nome>
   <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">maria@exemplo.com</email>
   <telefone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9999-2222</telefone>
@@ -921,7 +921,7 @@
 
 <owl:NamedIndividual rdf:about="#Carlos">
   <rdf:type rdf:resource="#Usuario"/>
-  <temPreferencia rdf:resource="#FilmeDeAcao"/>
+  <temPreferencia rdf:resource="#FilmeDeFiccao"/>
   <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carlos</nome>
   <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carlos@exemplo.com</email>
   <telefone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9999-3333</telefone>
@@ -930,7 +930,7 @@
 
 <owl:NamedIndividual rdf:about="#Ana">
   <rdf:type rdf:resource="#Usuario"/>
-  <temPreferencia rdf:resource="#FilmeDeTerror"/>
+  <temPreferencia rdf:resource="#FilmeDeSuspense"/>
   <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ana</nome>
   <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ana@exemplo.com</email>
   <telefone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9999-4444</telefone>
@@ -939,7 +939,7 @@
 
 <owl:NamedIndividual rdf:about="#Lucas">
   <rdf:type rdf:resource="#Usuario"/>
-  <temPreferencia rdf:resource="#FilmeDeComedia"/>
+  <temPreferencia rdf:resource="#FilmeDeSuspense"/>
   <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lucas</nome>
   <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lucas@exemplo.com</email>
   <telefone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9999-5555</telefone>
@@ -948,7 +948,7 @@
 
 <owl:NamedIndividual rdf:about="#Beatriz">
   <rdf:type rdf:resource="#Usuario"/>
-  <temPreferencia rdf:resource="#FilmeDeSuspense"/>
+  <temPreferencia rdf:resource="#FilmeDeTerror"/>
   <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beatriz</nome>
   <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beatriz@exemplo.com</email>
   <telefone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9999-6666</telefone>
@@ -957,7 +957,7 @@
 
 <owl:NamedIndividual rdf:about="#Paulo">
   <rdf:type rdf:resource="#Usuario"/>
-  <temPreferencia rdf:resource="#FilmeDeComedia"/>
+  <temPreferencia rdf:resource="#FilmeMusical"/>
   <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paulo</nome>
   <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">paulo@exemplo.com</email>
   <telefone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9999-7777</telefone>
@@ -966,7 +966,7 @@
 
 <owl:NamedIndividual rdf:about="#Mariana">
   <rdf:type rdf:resource="#Usuario"/>
-  <temPreferencia rdf:resource="#FilmeDeFiccao"/>
+  <temPreferencia rdf:resource="#FilmeDeTerror"/>
   <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mariana</nome>
   <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mariana@exemplo.com</email>
   <telefone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9999-8888</telefone>
@@ -975,7 +975,7 @@
 
 <owl:NamedIndividual rdf:about="#Ricardo">
   <rdf:type rdf:resource="#Usuario"/>
-  <temPreferencia rdf:resource="#FilmeDeAcao"/>
+  <temPreferencia rdf:resource="#FilmeDeTerror"/>
   <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ricardo</nome>
   <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ricardo@exemplo.com</email>
   <telefone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9999-9999</telefone>
@@ -984,7 +984,7 @@
 
 <owl:NamedIndividual rdf:about="#Fernanda">
   <rdf:type rdf:resource="#Usuario"/>
-  <temPreferencia rdf:resource="#FilmeMusical"/>
+  <temPreferencia rdf:resource="#FilmeDeAcao"/>
   <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fernanda</nome>
   <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fernanda@exemplo.com</email>
   <telefone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9888-1111</telefone>
@@ -993,7 +993,7 @@
 
 <owl:NamedIndividual rdf:about="#Juliana">
   <rdf:type rdf:resource="#Usuario"/>
-  <temPreferencia rdf:resource="#FilmeDeSuspense"/>
+  <temPreferencia rdf:resource="#FilmeMusical"/>
   <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Juliana</nome>
   <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">juliana@exemplo.com</email>
   <telefone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9888-2222</telefone>
@@ -1011,7 +1011,7 @@
 
 <owl:NamedIndividual rdf:about="#Roberta">
   <rdf:type rdf:resource="#Usuario"/>
-  <temPreferencia rdf:resource="#FilmeMusical"/>
+  <temPreferencia rdf:resource="#FilmeDeFiccao"/>
   <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Roberta</nome>
   <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">roberta@exemplo.com</email>
   <telefone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9888-4444</telefone>
@@ -1020,7 +1020,7 @@
 
 <owl:NamedIndividual rdf:about="#Eduardo">
   <rdf:type rdf:resource="#Usuario"/>
-  <temPreferencia rdf:resource="#FilmeDeTerror"/>
+  <temPreferencia rdf:resource="#FilmeDeAcao"/>
   <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eduardo</nome>
   <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eduardo@exemplo.com</email>
   <telefone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9888-5555</telefone>
@@ -1029,7 +1029,7 @@
 
 <owl:NamedIndividual rdf:about="#Simone">
   <rdf:type rdf:resource="#Usuario"/>
-  <temPreferencia rdf:resource="#FilmeMusical"/>
+  <temPreferencia rdf:resource="#FilmeDeFiccao"/>
   <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Simone</nome>
   <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">simone@exemplo.com</email>
   <telefone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9888-6666</telefone>
@@ -1966,6 +1966,2211 @@
   <dadoEm rdf:resource="#Evento03"/>
   <dadoEm rdf:resource="#Evento04"/>
   <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Melhor Trilha Sonora</nome>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval1">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Joao"/>
+  <pertenceAoFilme rdf:resource="#O_Poderoso_Chefao"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval2">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Joao"/>
+  <pertenceAoFilme rdf:resource="#A_Origem"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval3">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Joao"/>
+  <pertenceAoFilme rdf:resource="#Titanic"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval4">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Joao"/>
+  <pertenceAoFilme rdf:resource="#Forrest_Gump"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval5">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Joao"/>
+  <pertenceAoFilme rdf:resource="#Matrix"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval6">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Joao"/>
+  <pertenceAoFilme rdf:resource="#O_Senhor_dos_Aneis:_A_Sociedade_do_Anel"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval7">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Joao"/>
+  <pertenceAoFilme rdf:resource="#Vingadores:_Ultimato"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval8">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Joao"/>
+  <pertenceAoFilme rdf:resource="#Pantera_Negra"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval9">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Joao"/>
+  <pertenceAoFilme rdf:resource="#Homem-Aranha:_Sem_Volta_para_Casa"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval10">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Joao"/>
+  <pertenceAoFilme rdf:resource="#A_Bela_e_a_Fera"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval11">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Joao"/>
+  <pertenceAoFilme rdf:resource="#Gladiador"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval12">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Joao"/>
+  <pertenceAoFilme rdf:resource="#Coringa"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval13">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Joao"/>
+  <pertenceAoFilme rdf:resource="#Duna"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval14">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Joao"/>
+  <pertenceAoFilme rdf:resource="#Star_Wars:_Uma_Nova_Esperanca"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval15">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Joao"/>
+  <pertenceAoFilme rdf:resource="#Interestelar"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval16">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Joao"/>
+  <pertenceAoFilme rdf:resource="#Toy_Story"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval17">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Joao"/>
+  <pertenceAoFilme rdf:resource="#Harry_Potter_e_a_Pedra_Filosofal"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval18">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Joao"/>
+  <pertenceAoFilme rdf:resource="#A_Lista_de_Schindler"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval19">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Joao"/>
+  <pertenceAoFilme rdf:resource="#Pulp_Fiction:_Tempo_de_Violencia"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval20">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Joao"/>
+  <pertenceAoFilme rdf:resource="#O_Rei_Leao"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval21">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Joao"/>
+  <pertenceAoFilme rdf:resource="#Procurando_Nemo"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval22">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Maria"/>
+  <pertenceAoFilme rdf:resource="#Os_Incriveis"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval23">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Maria"/>
+  <pertenceAoFilme rdf:resource="#Frozen:_Uma_Aventura_Congelante"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval24">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Maria"/>
+  <pertenceAoFilme rdf:resource="#Encanto"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval25">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Maria"/>
+  <pertenceAoFilme rdf:resource="#Moana:_Um_Mar_de_Aventuras"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval26">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Maria"/>
+  <pertenceAoFilme rdf:resource="#Carros"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval27">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Maria"/>
+  <pertenceAoFilme rdf:resource="#Divertida_Mente"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval28">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Maria"/>
+  <pertenceAoFilme rdf:resource="#Shrek"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval29">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Maria"/>
+  <pertenceAoFilme rdf:resource="#Kung_Fu_Panda"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval30">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Maria"/>
+  <pertenceAoFilme rdf:resource="#Homem_de_Ferro"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval31">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Maria"/>
+  <pertenceAoFilme rdf:resource="#Capitao_America:_O_Primeiro_Vingador"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval32">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Maria"/>
+  <pertenceAoFilme rdf:resource="#Guardioes_da_Galaxia"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval33">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Maria"/>
+  <pertenceAoFilme rdf:resource="#Thor:_Ragnarok"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval34">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Maria"/>
+  <pertenceAoFilme rdf:resource="#Viuva_Negra"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval35">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Maria"/>
+  <pertenceAoFilme rdf:resource="#Avatar"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval36">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Maria"/>
+  <pertenceAoFilme rdf:resource="#Top_Gun:_Maverick"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval37">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Maria"/>
+  <pertenceAoFilme rdf:resource="#Cisne_Negro"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval38">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Maria"/>
+  <pertenceAoFilme rdf:resource="#A_Teoria_de_Tudo"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval39">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Maria"/>
+  <pertenceAoFilme rdf:resource="#Bohemian_Rhapsody"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval40">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Maria"/>
+  <pertenceAoFilme rdf:resource="#O_Exorcista"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval41">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Maria"/>
+  <pertenceAoFilme rdf:resource="#Psicose"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval42">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Maria"/>
+  <pertenceAoFilme rdf:resource="#O_Iluminado"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval43">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Carlos"/>
+  <pertenceAoFilme rdf:resource="#O_Poderoso_Chefao"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval44">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Carlos"/>
+  <pertenceAoFilme rdf:resource="#A_Origem"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval45">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Carlos"/>
+  <pertenceAoFilme rdf:resource="#Titanic"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval46">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Carlos"/>
+  <pertenceAoFilme rdf:resource="#Forrest_Gump"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval47">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Carlos"/>
+  <pertenceAoFilme rdf:resource="#Matrix"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval48">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Carlos"/>
+  <pertenceAoFilme rdf:resource="#O_Senhor_dos_Aneis:_A_Sociedade_do_Anel"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval49">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Carlos"/>
+  <pertenceAoFilme rdf:resource="#Vingadores:_Ultimato"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval50">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Carlos"/>
+  <pertenceAoFilme rdf:resource="#Pantera_Negra"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval51">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Carlos"/>
+  <pertenceAoFilme rdf:resource="#Homem-Aranha:_Sem_Volta_para_Casa"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval52">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Carlos"/>
+  <pertenceAoFilme rdf:resource="#A_Bela_e_a_Fera"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval53">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Carlos"/>
+  <pertenceAoFilme rdf:resource="#Gladiador"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval54">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Carlos"/>
+  <pertenceAoFilme rdf:resource="#Coringa"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval55">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Carlos"/>
+  <pertenceAoFilme rdf:resource="#Duna"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval56">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Carlos"/>
+  <pertenceAoFilme rdf:resource="#Star_Wars:_Uma_Nova_Esperanca"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval57">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Carlos"/>
+  <pertenceAoFilme rdf:resource="#Interestelar"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval58">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Carlos"/>
+  <pertenceAoFilme rdf:resource="#Toy_Story"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval59">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Carlos"/>
+  <pertenceAoFilme rdf:resource="#Harry_Potter_e_a_Pedra_Filosofal"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval60">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Carlos"/>
+  <pertenceAoFilme rdf:resource="#A_Lista_de_Schindler"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval61">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Carlos"/>
+  <pertenceAoFilme rdf:resource="#Pulp_Fiction:_Tempo_de_Violencia"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval62">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Carlos"/>
+  <pertenceAoFilme rdf:resource="#O_Rei_Leao"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval63">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Carlos"/>
+  <pertenceAoFilme rdf:resource="#Procurando_Nemo"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval64">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Ana"/>
+  <pertenceAoFilme rdf:resource="#Os_Incriveis"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval65">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Ana"/>
+  <pertenceAoFilme rdf:resource="#Frozen:_Uma_Aventura_Congelante"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval66">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Ana"/>
+  <pertenceAoFilme rdf:resource="#Encanto"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval67">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Ana"/>
+  <pertenceAoFilme rdf:resource="#Moana:_Um_Mar_de_Aventuras"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval68">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Ana"/>
+  <pertenceAoFilme rdf:resource="#Carros"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval69">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Ana"/>
+  <pertenceAoFilme rdf:resource="#Divertida_Mente"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval70">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Ana"/>
+  <pertenceAoFilme rdf:resource="#Shrek"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval71">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Ana"/>
+  <pertenceAoFilme rdf:resource="#Kung_Fu_Panda"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval72">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Ana"/>
+  <pertenceAoFilme rdf:resource="#Homem_de_Ferro"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval73">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Ana"/>
+  <pertenceAoFilme rdf:resource="#Capitao_America:_O_Primeiro_Vingador"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval74">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Ana"/>
+  <pertenceAoFilme rdf:resource="#Guardioes_da_Galaxia"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval75">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Ana"/>
+  <pertenceAoFilme rdf:resource="#Thor:_Ragnarok"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval76">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Ana"/>
+  <pertenceAoFilme rdf:resource="#Viuva_Negra"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval77">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Ana"/>
+  <pertenceAoFilme rdf:resource="#Avatar"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval78">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Ana"/>
+  <pertenceAoFilme rdf:resource="#Top_Gun:_Maverick"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval79">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Ana"/>
+  <pertenceAoFilme rdf:resource="#Cisne_Negro"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval80">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Ana"/>
+  <pertenceAoFilme rdf:resource="#A_Teoria_de_Tudo"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval81">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Ana"/>
+  <pertenceAoFilme rdf:resource="#Bohemian_Rhapsody"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval82">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Ana"/>
+  <pertenceAoFilme rdf:resource="#O_Exorcista"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval83">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Ana"/>
+  <pertenceAoFilme rdf:resource="#Psicose"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval84">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Ana"/>
+  <pertenceAoFilme rdf:resource="#O_Iluminado"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval85">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Lucas"/>
+  <pertenceAoFilme rdf:resource="#O_Poderoso_Chefao"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval86">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Lucas"/>
+  <pertenceAoFilme rdf:resource="#A_Origem"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval87">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Lucas"/>
+  <pertenceAoFilme rdf:resource="#Titanic"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval88">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Lucas"/>
+  <pertenceAoFilme rdf:resource="#Forrest_Gump"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval89">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Lucas"/>
+  <pertenceAoFilme rdf:resource="#Matrix"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval90">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Lucas"/>
+  <pertenceAoFilme rdf:resource="#O_Senhor_dos_Aneis:_A_Sociedade_do_Anel"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval91">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Lucas"/>
+  <pertenceAoFilme rdf:resource="#Vingadores:_Ultimato"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval92">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Lucas"/>
+  <pertenceAoFilme rdf:resource="#Pantera_Negra"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval93">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Lucas"/>
+  <pertenceAoFilme rdf:resource="#Homem-Aranha:_Sem_Volta_para_Casa"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval94">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Lucas"/>
+  <pertenceAoFilme rdf:resource="#A_Bela_e_a_Fera"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval95">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Lucas"/>
+  <pertenceAoFilme rdf:resource="#Gladiador"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval96">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Lucas"/>
+  <pertenceAoFilme rdf:resource="#Coringa"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval97">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Lucas"/>
+  <pertenceAoFilme rdf:resource="#Duna"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval98">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Lucas"/>
+  <pertenceAoFilme rdf:resource="#Star_Wars:_Uma_Nova_Esperanca"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval99">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Lucas"/>
+  <pertenceAoFilme rdf:resource="#Interestelar"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval100">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Lucas"/>
+  <pertenceAoFilme rdf:resource="#Toy_Story"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval101">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Lucas"/>
+  <pertenceAoFilme rdf:resource="#Harry_Potter_e_a_Pedra_Filosofal"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval102">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Lucas"/>
+  <pertenceAoFilme rdf:resource="#A_Lista_de_Schindler"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval103">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Lucas"/>
+  <pertenceAoFilme rdf:resource="#Pulp_Fiction:_Tempo_de_Violencia"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval104">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Lucas"/>
+  <pertenceAoFilme rdf:resource="#O_Rei_Leao"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval105">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Lucas"/>
+  <pertenceAoFilme rdf:resource="#Procurando_Nemo"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval106">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Beatriz"/>
+  <pertenceAoFilme rdf:resource="#Os_Incriveis"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval107">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Beatriz"/>
+  <pertenceAoFilme rdf:resource="#Frozen:_Uma_Aventura_Congelante"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval108">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Beatriz"/>
+  <pertenceAoFilme rdf:resource="#Encanto"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval109">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Beatriz"/>
+  <pertenceAoFilme rdf:resource="#Moana:_Um_Mar_de_Aventuras"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval110">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Beatriz"/>
+  <pertenceAoFilme rdf:resource="#Carros"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval111">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Beatriz"/>
+  <pertenceAoFilme rdf:resource="#Divertida_Mente"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval112">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Beatriz"/>
+  <pertenceAoFilme rdf:resource="#Shrek"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval113">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Beatriz"/>
+  <pertenceAoFilme rdf:resource="#Kung_Fu_Panda"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval114">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Beatriz"/>
+  <pertenceAoFilme rdf:resource="#Homem_de_Ferro"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval115">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Beatriz"/>
+  <pertenceAoFilme rdf:resource="#Capitao_America:_O_Primeiro_Vingador"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval116">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Beatriz"/>
+  <pertenceAoFilme rdf:resource="#Guardioes_da_Galaxia"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval117">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Beatriz"/>
+  <pertenceAoFilme rdf:resource="#Thor:_Ragnarok"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval118">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Beatriz"/>
+  <pertenceAoFilme rdf:resource="#Viuva_Negra"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval119">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Beatriz"/>
+  <pertenceAoFilme rdf:resource="#Avatar"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval120">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Beatriz"/>
+  <pertenceAoFilme rdf:resource="#Top_Gun:_Maverick"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval121">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Beatriz"/>
+  <pertenceAoFilme rdf:resource="#Cisne_Negro"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval122">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Beatriz"/>
+  <pertenceAoFilme rdf:resource="#A_Teoria_de_Tudo"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval123">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Beatriz"/>
+  <pertenceAoFilme rdf:resource="#Bohemian_Rhapsody"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval124">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Beatriz"/>
+  <pertenceAoFilme rdf:resource="#O_Exorcista"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval125">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Beatriz"/>
+  <pertenceAoFilme rdf:resource="#Psicose"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval126">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Beatriz"/>
+  <pertenceAoFilme rdf:resource="#O_Iluminado"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval127">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Paulo"/>
+  <pertenceAoFilme rdf:resource="#O_Poderoso_Chefao"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval128">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Paulo"/>
+  <pertenceAoFilme rdf:resource="#A_Origem"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval129">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Paulo"/>
+  <pertenceAoFilme rdf:resource="#Titanic"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval130">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Paulo"/>
+  <pertenceAoFilme rdf:resource="#Forrest_Gump"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval131">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Paulo"/>
+  <pertenceAoFilme rdf:resource="#Matrix"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval132">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Paulo"/>
+  <pertenceAoFilme rdf:resource="#O_Senhor_dos_Aneis:_A_Sociedade_do_Anel"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval133">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Paulo"/>
+  <pertenceAoFilme rdf:resource="#Vingadores:_Ultimato"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval134">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Paulo"/>
+  <pertenceAoFilme rdf:resource="#Pantera_Negra"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval135">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Paulo"/>
+  <pertenceAoFilme rdf:resource="#Homem-Aranha:_Sem_Volta_para_Casa"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval136">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Paulo"/>
+  <pertenceAoFilme rdf:resource="#A_Bela_e_a_Fera"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval137">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Paulo"/>
+  <pertenceAoFilme rdf:resource="#Gladiador"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval138">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Paulo"/>
+  <pertenceAoFilme rdf:resource="#Coringa"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval139">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Paulo"/>
+  <pertenceAoFilme rdf:resource="#Duna"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval140">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Paulo"/>
+  <pertenceAoFilme rdf:resource="#Star_Wars:_Uma_Nova_Esperanca"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval141">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Paulo"/>
+  <pertenceAoFilme rdf:resource="#Interestelar"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval142">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Paulo"/>
+  <pertenceAoFilme rdf:resource="#Toy_Story"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval143">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Paulo"/>
+  <pertenceAoFilme rdf:resource="#Harry_Potter_e_a_Pedra_Filosofal"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval144">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Paulo"/>
+  <pertenceAoFilme rdf:resource="#A_Lista_de_Schindler"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval145">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Paulo"/>
+  <pertenceAoFilme rdf:resource="#Pulp_Fiction:_Tempo_de_Violencia"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval146">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Paulo"/>
+  <pertenceAoFilme rdf:resource="#O_Rei_Leao"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval147">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Paulo"/>
+  <pertenceAoFilme rdf:resource="#Procurando_Nemo"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval148">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Mariana"/>
+  <pertenceAoFilme rdf:resource="#Os_Incriveis"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval149">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Mariana"/>
+  <pertenceAoFilme rdf:resource="#Frozen:_Uma_Aventura_Congelante"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval150">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Mariana"/>
+  <pertenceAoFilme rdf:resource="#Encanto"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval151">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Mariana"/>
+  <pertenceAoFilme rdf:resource="#Moana:_Um_Mar_de_Aventuras"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval152">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Mariana"/>
+  <pertenceAoFilme rdf:resource="#Carros"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval153">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Mariana"/>
+  <pertenceAoFilme rdf:resource="#Divertida_Mente"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval154">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Mariana"/>
+  <pertenceAoFilme rdf:resource="#Shrek"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval155">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Mariana"/>
+  <pertenceAoFilme rdf:resource="#Kung_Fu_Panda"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval156">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Mariana"/>
+  <pertenceAoFilme rdf:resource="#Homem_de_Ferro"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval157">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Mariana"/>
+  <pertenceAoFilme rdf:resource="#Capitao_America:_O_Primeiro_Vingador"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval158">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Mariana"/>
+  <pertenceAoFilme rdf:resource="#Guardioes_da_Galaxia"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval159">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Mariana"/>
+  <pertenceAoFilme rdf:resource="#Thor:_Ragnarok"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval160">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Mariana"/>
+  <pertenceAoFilme rdf:resource="#Viuva_Negra"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval161">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Mariana"/>
+  <pertenceAoFilme rdf:resource="#Avatar"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval162">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Mariana"/>
+  <pertenceAoFilme rdf:resource="#Top_Gun:_Maverick"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval163">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Mariana"/>
+  <pertenceAoFilme rdf:resource="#Cisne_Negro"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval164">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Mariana"/>
+  <pertenceAoFilme rdf:resource="#A_Teoria_de_Tudo"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval165">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Mariana"/>
+  <pertenceAoFilme rdf:resource="#Bohemian_Rhapsody"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval166">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Mariana"/>
+  <pertenceAoFilme rdf:resource="#O_Exorcista"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval167">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Mariana"/>
+  <pertenceAoFilme rdf:resource="#Psicose"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval168">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Mariana"/>
+  <pertenceAoFilme rdf:resource="#O_Iluminado"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval169">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Ricardo"/>
+  <pertenceAoFilme rdf:resource="#O_Poderoso_Chefao"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval170">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Ricardo"/>
+  <pertenceAoFilme rdf:resource="#A_Origem"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval171">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Ricardo"/>
+  <pertenceAoFilme rdf:resource="#Titanic"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval172">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Ricardo"/>
+  <pertenceAoFilme rdf:resource="#Forrest_Gump"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval173">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Ricardo"/>
+  <pertenceAoFilme rdf:resource="#Matrix"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval174">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Ricardo"/>
+  <pertenceAoFilme rdf:resource="#O_Senhor_dos_Aneis:_A_Sociedade_do_Anel"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval175">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Ricardo"/>
+  <pertenceAoFilme rdf:resource="#Vingadores:_Ultimato"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval176">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Ricardo"/>
+  <pertenceAoFilme rdf:resource="#Pantera_Negra"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval177">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Ricardo"/>
+  <pertenceAoFilme rdf:resource="#Homem-Aranha:_Sem_Volta_para_Casa"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval178">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Ricardo"/>
+  <pertenceAoFilme rdf:resource="#A_Bela_e_a_Fera"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval179">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Ricardo"/>
+  <pertenceAoFilme rdf:resource="#Gladiador"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval180">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Ricardo"/>
+  <pertenceAoFilme rdf:resource="#Coringa"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval181">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Ricardo"/>
+  <pertenceAoFilme rdf:resource="#Duna"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval182">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Ricardo"/>
+  <pertenceAoFilme rdf:resource="#Star_Wars:_Uma_Nova_Esperanca"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval183">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Ricardo"/>
+  <pertenceAoFilme rdf:resource="#Interestelar"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval184">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Ricardo"/>
+  <pertenceAoFilme rdf:resource="#Toy_Story"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval185">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Ricardo"/>
+  <pertenceAoFilme rdf:resource="#Harry_Potter_e_a_Pedra_Filosofal"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval186">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Ricardo"/>
+  <pertenceAoFilme rdf:resource="#A_Lista_de_Schindler"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval187">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Ricardo"/>
+  <pertenceAoFilme rdf:resource="#Pulp_Fiction:_Tempo_de_Violencia"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval188">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Ricardo"/>
+  <pertenceAoFilme rdf:resource="#O_Rei_Leao"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval189">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Ricardo"/>
+  <pertenceAoFilme rdf:resource="#Procurando_Nemo"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval190">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Fernanda"/>
+  <pertenceAoFilme rdf:resource="#Os_Incriveis"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval191">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Fernanda"/>
+  <pertenceAoFilme rdf:resource="#Frozen:_Uma_Aventura_Congelante"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval192">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Fernanda"/>
+  <pertenceAoFilme rdf:resource="#Encanto"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval193">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Fernanda"/>
+  <pertenceAoFilme rdf:resource="#Moana:_Um_Mar_de_Aventuras"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval194">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Fernanda"/>
+  <pertenceAoFilme rdf:resource="#Carros"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval195">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Fernanda"/>
+  <pertenceAoFilme rdf:resource="#Divertida_Mente"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval196">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Fernanda"/>
+  <pertenceAoFilme rdf:resource="#Shrek"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval197">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Fernanda"/>
+  <pertenceAoFilme rdf:resource="#Kung_Fu_Panda"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval198">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Fernanda"/>
+  <pertenceAoFilme rdf:resource="#Homem_de_Ferro"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval199">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Fernanda"/>
+  <pertenceAoFilme rdf:resource="#Capitao_America:_O_Primeiro_Vingador"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval200">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Fernanda"/>
+  <pertenceAoFilme rdf:resource="#Guardioes_da_Galaxia"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval201">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Fernanda"/>
+  <pertenceAoFilme rdf:resource="#Thor:_Ragnarok"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval202">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Fernanda"/>
+  <pertenceAoFilme rdf:resource="#Viuva_Negra"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval203">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Fernanda"/>
+  <pertenceAoFilme rdf:resource="#Avatar"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval204">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Fernanda"/>
+  <pertenceAoFilme rdf:resource="#Top_Gun:_Maverick"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval205">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Fernanda"/>
+  <pertenceAoFilme rdf:resource="#Cisne_Negro"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval206">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Fernanda"/>
+  <pertenceAoFilme rdf:resource="#A_Teoria_de_Tudo"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval207">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Fernanda"/>
+  <pertenceAoFilme rdf:resource="#Bohemian_Rhapsody"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval208">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Fernanda"/>
+  <pertenceAoFilme rdf:resource="#O_Exorcista"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval209">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Fernanda"/>
+  <pertenceAoFilme rdf:resource="#Psicose"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval210">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Fernanda"/>
+  <pertenceAoFilme rdf:resource="#O_Iluminado"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval211">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Juliana"/>
+  <pertenceAoFilme rdf:resource="#O_Poderoso_Chefao"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval212">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Juliana"/>
+  <pertenceAoFilme rdf:resource="#A_Origem"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval213">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Juliana"/>
+  <pertenceAoFilme rdf:resource="#Titanic"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval214">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Juliana"/>
+  <pertenceAoFilme rdf:resource="#Forrest_Gump"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval215">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Juliana"/>
+  <pertenceAoFilme rdf:resource="#Matrix"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval216">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Juliana"/>
+  <pertenceAoFilme rdf:resource="#O_Senhor_dos_Aneis:_A_Sociedade_do_Anel"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval217">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Juliana"/>
+  <pertenceAoFilme rdf:resource="#Vingadores:_Ultimato"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval218">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Juliana"/>
+  <pertenceAoFilme rdf:resource="#Pantera_Negra"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval219">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Juliana"/>
+  <pertenceAoFilme rdf:resource="#Homem-Aranha:_Sem_Volta_para_Casa"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval220">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Juliana"/>
+  <pertenceAoFilme rdf:resource="#A_Bela_e_a_Fera"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval221">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Juliana"/>
+  <pertenceAoFilme rdf:resource="#Gladiador"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval222">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Juliana"/>
+  <pertenceAoFilme rdf:resource="#Coringa"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval223">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Juliana"/>
+  <pertenceAoFilme rdf:resource="#Duna"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval224">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Juliana"/>
+  <pertenceAoFilme rdf:resource="#Star_Wars:_Uma_Nova_Esperanca"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval225">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Juliana"/>
+  <pertenceAoFilme rdf:resource="#Interestelar"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval226">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Juliana"/>
+  <pertenceAoFilme rdf:resource="#Toy_Story"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval227">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Juliana"/>
+  <pertenceAoFilme rdf:resource="#Harry_Potter_e_a_Pedra_Filosofal"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval228">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Juliana"/>
+  <pertenceAoFilme rdf:resource="#A_Lista_de_Schindler"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval229">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Juliana"/>
+  <pertenceAoFilme rdf:resource="#Pulp_Fiction:_Tempo_de_Violencia"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval230">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Juliana"/>
+  <pertenceAoFilme rdf:resource="#O_Rei_Leao"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval231">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Juliana"/>
+  <pertenceAoFilme rdf:resource="#Procurando_Nemo"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval232">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Gabriel"/>
+  <pertenceAoFilme rdf:resource="#Os_Incriveis"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval233">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Gabriel"/>
+  <pertenceAoFilme rdf:resource="#Frozen:_Uma_Aventura_Congelante"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval234">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Gabriel"/>
+  <pertenceAoFilme rdf:resource="#Encanto"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval235">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Gabriel"/>
+  <pertenceAoFilme rdf:resource="#Moana:_Um_Mar_de_Aventuras"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval236">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Gabriel"/>
+  <pertenceAoFilme rdf:resource="#Carros"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval237">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Gabriel"/>
+  <pertenceAoFilme rdf:resource="#Divertida_Mente"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval238">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Gabriel"/>
+  <pertenceAoFilme rdf:resource="#Shrek"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval239">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Gabriel"/>
+  <pertenceAoFilme rdf:resource="#Kung_Fu_Panda"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval240">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Gabriel"/>
+  <pertenceAoFilme rdf:resource="#Homem_de_Ferro"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval241">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Gabriel"/>
+  <pertenceAoFilme rdf:resource="#Capitao_America:_O_Primeiro_Vingador"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval242">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Gabriel"/>
+  <pertenceAoFilme rdf:resource="#Guardioes_da_Galaxia"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval243">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Gabriel"/>
+  <pertenceAoFilme rdf:resource="#Thor:_Ragnarok"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval244">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Gabriel"/>
+  <pertenceAoFilme rdf:resource="#Viuva_Negra"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval245">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Gabriel"/>
+  <pertenceAoFilme rdf:resource="#Avatar"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval246">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Gabriel"/>
+  <pertenceAoFilme rdf:resource="#Top_Gun:_Maverick"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval247">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Gabriel"/>
+  <pertenceAoFilme rdf:resource="#Cisne_Negro"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval248">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Gabriel"/>
+  <pertenceAoFilme rdf:resource="#A_Teoria_de_Tudo"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval249">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Gabriel"/>
+  <pertenceAoFilme rdf:resource="#Bohemian_Rhapsody"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval250">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Gabriel"/>
+  <pertenceAoFilme rdf:resource="#O_Exorcista"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval251">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Gabriel"/>
+  <pertenceAoFilme rdf:resource="#Psicose"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval252">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Gabriel"/>
+  <pertenceAoFilme rdf:resource="#O_Iluminado"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval253">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Roberta"/>
+  <pertenceAoFilme rdf:resource="#O_Poderoso_Chefao"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval254">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Roberta"/>
+  <pertenceAoFilme rdf:resource="#A_Origem"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval255">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Roberta"/>
+  <pertenceAoFilme rdf:resource="#Titanic"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval256">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Roberta"/>
+  <pertenceAoFilme rdf:resource="#Forrest_Gump"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval257">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Roberta"/>
+  <pertenceAoFilme rdf:resource="#Matrix"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval258">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Roberta"/>
+  <pertenceAoFilme rdf:resource="#O_Senhor_dos_Aneis:_A_Sociedade_do_Anel"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval259">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Roberta"/>
+  <pertenceAoFilme rdf:resource="#Vingadores:_Ultimato"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval260">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Roberta"/>
+  <pertenceAoFilme rdf:resource="#Pantera_Negra"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval261">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Roberta"/>
+  <pertenceAoFilme rdf:resource="#Homem-Aranha:_Sem_Volta_para_Casa"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval262">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Roberta"/>
+  <pertenceAoFilme rdf:resource="#A_Bela_e_a_Fera"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval263">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Roberta"/>
+  <pertenceAoFilme rdf:resource="#Gladiador"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval264">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Roberta"/>
+  <pertenceAoFilme rdf:resource="#Coringa"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval265">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Roberta"/>
+  <pertenceAoFilme rdf:resource="#Duna"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval266">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Roberta"/>
+  <pertenceAoFilme rdf:resource="#Star_Wars:_Uma_Nova_Esperanca"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval267">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Roberta"/>
+  <pertenceAoFilme rdf:resource="#Interestelar"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval268">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Roberta"/>
+  <pertenceAoFilme rdf:resource="#Toy_Story"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval269">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Roberta"/>
+  <pertenceAoFilme rdf:resource="#Harry_Potter_e_a_Pedra_Filosofal"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval270">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Roberta"/>
+  <pertenceAoFilme rdf:resource="#A_Lista_de_Schindler"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval271">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Roberta"/>
+  <pertenceAoFilme rdf:resource="#Pulp_Fiction:_Tempo_de_Violencia"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval272">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Roberta"/>
+  <pertenceAoFilme rdf:resource="#O_Rei_Leao"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval273">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Roberta"/>
+  <pertenceAoFilme rdf:resource="#Procurando_Nemo"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval274">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Eduardo"/>
+  <pertenceAoFilme rdf:resource="#Os_Incriveis"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval275">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Eduardo"/>
+  <pertenceAoFilme rdf:resource="#Frozen:_Uma_Aventura_Congelante"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval276">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Eduardo"/>
+  <pertenceAoFilme rdf:resource="#Encanto"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval277">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Eduardo"/>
+  <pertenceAoFilme rdf:resource="#Moana:_Um_Mar_de_Aventuras"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval278">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Eduardo"/>
+  <pertenceAoFilme rdf:resource="#Carros"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval279">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Eduardo"/>
+  <pertenceAoFilme rdf:resource="#Divertida_Mente"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval280">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Eduardo"/>
+  <pertenceAoFilme rdf:resource="#Shrek"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval281">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Eduardo"/>
+  <pertenceAoFilme rdf:resource="#Kung_Fu_Panda"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval282">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Eduardo"/>
+  <pertenceAoFilme rdf:resource="#Homem_de_Ferro"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval283">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Eduardo"/>
+  <pertenceAoFilme rdf:resource="#Capitao_America:_O_Primeiro_Vingador"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval284">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Eduardo"/>
+  <pertenceAoFilme rdf:resource="#Guardioes_da_Galaxia"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval285">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Eduardo"/>
+  <pertenceAoFilme rdf:resource="#Thor:_Ragnarok"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval286">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Eduardo"/>
+  <pertenceAoFilme rdf:resource="#Viuva_Negra"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval287">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Eduardo"/>
+  <pertenceAoFilme rdf:resource="#Avatar"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval288">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Eduardo"/>
+  <pertenceAoFilme rdf:resource="#Top_Gun:_Maverick"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval289">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Eduardo"/>
+  <pertenceAoFilme rdf:resource="#Cisne_Negro"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval290">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Eduardo"/>
+  <pertenceAoFilme rdf:resource="#A_Teoria_de_Tudo"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval291">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Eduardo"/>
+  <pertenceAoFilme rdf:resource="#Bohemian_Rhapsody"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval292">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Eduardo"/>
+  <pertenceAoFilme rdf:resource="#O_Exorcista"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval293">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Eduardo"/>
+  <pertenceAoFilme rdf:resource="#Psicose"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval294">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Eduardo"/>
+  <pertenceAoFilme rdf:resource="#O_Iluminado"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval295">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Simone"/>
+  <pertenceAoFilme rdf:resource="#O_Poderoso_Chefao"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval296">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Simone"/>
+  <pertenceAoFilme rdf:resource="#A_Origem"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval297">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Simone"/>
+  <pertenceAoFilme rdf:resource="#Titanic"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval298">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Simone"/>
+  <pertenceAoFilme rdf:resource="#Forrest_Gump"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval299">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Simone"/>
+  <pertenceAoFilme rdf:resource="#Matrix"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval300">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Simone"/>
+  <pertenceAoFilme rdf:resource="#O_Senhor_dos_Aneis:_A_Sociedade_do_Anel"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval301">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Simone"/>
+  <pertenceAoFilme rdf:resource="#Vingadores:_Ultimato"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval302">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Simone"/>
+  <pertenceAoFilme rdf:resource="#Pantera_Negra"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval303">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Simone"/>
+  <pertenceAoFilme rdf:resource="#Homem-Aranha:_Sem_Volta_para_Casa"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval304">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Simone"/>
+  <pertenceAoFilme rdf:resource="#A_Bela_e_a_Fera"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval305">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Simone"/>
+  <pertenceAoFilme rdf:resource="#Gladiador"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval306">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Simone"/>
+  <pertenceAoFilme rdf:resource="#Coringa"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval307">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Simone"/>
+  <pertenceAoFilme rdf:resource="#Duna"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval308">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Simone"/>
+  <pertenceAoFilme rdf:resource="#Star_Wars:_Uma_Nova_Esperanca"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval309">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Simone"/>
+  <pertenceAoFilme rdf:resource="#Interestelar"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval310">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Simone"/>
+  <pertenceAoFilme rdf:resource="#Toy_Story"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval311">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Simone"/>
+  <pertenceAoFilme rdf:resource="#Harry_Potter_e_a_Pedra_Filosofal"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval312">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Simone"/>
+  <pertenceAoFilme rdf:resource="#A_Lista_de_Schindler"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval313">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Simone"/>
+  <pertenceAoFilme rdf:resource="#Pulp_Fiction:_Tempo_de_Violencia"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval314">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Simone"/>
+  <pertenceAoFilme rdf:resource="#O_Rei_Leao"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</nota>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aval315">
+  <rdf:type rdf:resource="#Avaliacao"/>
+  <avaliadoPor rdf:resource="#Simone"/>
+  <pertenceAoFilme rdf:resource="#Procurando_Nemo"/>
+  <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nota>
 </owl:NamedIndividual>
 
 <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#int"/>

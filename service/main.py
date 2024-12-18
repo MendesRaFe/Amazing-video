@@ -1,8 +1,14 @@
 from owlready2 import *
 import unicodedata
 import random
+import os
 
 class SistemaRecomendacao:
+    # Recupera o diretorio atual
+    def dirOntos():
+        cwd = os.getcwd()
+        return f"{cwd}\service\\filmes_atualizado_com_ids.rdf"
+
     def __init__(self, caminho_ontologia):
         self.onto = get_ontology(caminho_ontologia).load()
 
@@ -30,7 +36,16 @@ class SistemaRecomendacao:
         # Salva as alterações na ontologia
         self.salvar_ontologia()
         return f"Usuário '{nome}' cadastrado com sucesso!"
-    
+
+    #Lista todas as subclasses de Generos definidas
+    def listar_generos(self):
+        urlGeneros = list(self.onto.Genero.instances())
+        generos = []
+        #Resgata apenas o nome das subclasses
+        for genero in urlGeneros:
+            generos.append(genero.name)
+        return generos
+     
     
     def adicionar_generos_favoritos(self, email_usuario, lista_generos):
         # Busca o usuário na ontologia pelo email
@@ -104,7 +119,7 @@ class SistemaRecomendacao:
         return f"Atores favoritos atualizados para o usuário '{email_usuario}'."
         
 if __name__ == "__main__":
-    sistema = SistemaRecomendacao("filmesV2.rdf")
+    sistema = SistemaRecomendacao("filmes_atualizado_com_ids.rdf")
     
     ''' testando resultados '''
 
@@ -131,4 +146,9 @@ if __name__ == "__main__":
     )
     print(resultado)
 
+    #listar generos
+    print(sistema.listar_generos())
+
+    #Diretorio Ontologias
+    print(SistemaRecomendacao.dirOntos())
     
