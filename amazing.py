@@ -699,6 +699,34 @@ for i, usuario in enumerate(usuarios):
         avaliacao_id += 1  # Incrementa o ID da avaliação
 
 
+# Cria uma associação apenas se o mesmo usuário não indicou o mesmo ator antes
+def gostaDeAtor(usuario, ator):
+    """
+    Relaciona um usuário a um ator, caso a relação ainda não exista.
+    """
+    # Verifica se o usuário já gosta do ator
+    if ator in usuario.gostaDe:
+        print(f"Erro: {usuario.name} já indicou o ator {ator.name}. Indicação não permitida.")
+        return
+
+    # Cria a associação
+    usuario.gostaDe.append(ator)
+    
+
+# Iterar sobre todas as instâncias de Usuario e Ator
+usuarios = list(onto.Usuario.instances())  # Instâncias de usuários
+atores = list(onto.Ator.instances())      # Instâncias de atores
+
+# Itera sobre cada usuário
+for i, usuario in enumerate(usuarios):
+    # Seleciona 5 atores aleatórios da lista de atores
+    atores_selecionados = random.sample(atores, k=5)
+
+    # Relaciona o usuário com cada um dos 5 atores selecionados
+    for ator in atores_selecionados:
+        gostaDeAtor(usuario, ator)
+
+
 #print([filme.name for filme in onto.Filme.instances()])
 # print()
 # print([ator.name for ator in onto.Ator.instances()])
