@@ -1,0 +1,508 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao"
+     xml:base="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:amazingVideo="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao"
+     xmlns:sistemarecomendacao="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#int -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#int"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#string -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#atuaEm -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#atuaEm">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#atuadoPor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Ator"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Filme"/>
+        <rdfs:label>atua em</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#atuadoPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#atuadoPor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Filme"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#atuadoPor"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Ator"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:label>atuado por</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#avaliadoPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#avaliadoPor">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#fazAvaliacao"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Avaliacao"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Usuario"/>
+        <rdfs:label>avaliado por</rdfs:label>
+        <rdfs:label>faz avaliação</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#conquistaPremio -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#conquistaPremio">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Filme"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Premio"/>
+        <rdfs:label>conquista prêmio</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#criaRoteiro -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#criaRoteiro">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Roteirista"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Filme"/>
+        <rdfs:label>cria roteiro</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#dadoEm -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#dadoEm">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Premio"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Evento"/>
+        <rdfs:label>dado em</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#dirigidoPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#dirigidoPor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Filme"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#dirigidoPor"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Diretor"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:label>dirigido por</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#fazAvaliacao -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#fazAvaliacao">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Usuario"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Avaliacao"/>
+        <rdfs:label>faz avaliação</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#gostaDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#gostaDe">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Usuario"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Ator"/>
+        <rdfs:label>gosta de</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#pertenceAoFilme -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#pertenceAoFilme">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Avaliacao"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Filme"/>
+        <rdfs:label>pertence ao filme</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#possuiGenero -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#possuiGenero">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Filme"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Genero"/>
+        <rdfs:label>possui gênero</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#produzFilme -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#produzFilme">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Produtor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Filme"/>
+        <rdfs:label>produz filme</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#temPreferencia -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#temPreferencia">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Usuario"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Genero"/>
+        <rdfs:label>tem preferência</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#anoLancamento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#anoLancamento">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Filme"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#anoProducao -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#anoProducao">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Filme"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#email -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#email">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Pessoa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#idade -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#idade">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Pessoa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#idioma -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#idioma">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Filme"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#nacionalidade -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#nacionalidade">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Filme"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#nome -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#nome">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Pessoa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#nota -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#nota">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Avaliacao"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#telefone -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#telefone">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Pessoa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#tituloEvento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#tituloEvento">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Evento"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#tituloOriginal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#tituloOriginal">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Filme"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#tituloPortugues -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#tituloPortugues">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Filme"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#tituloPremio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#tituloPremio">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Premio"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Acao -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Acao">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Genero"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Ator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Ator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Pessoa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Avaliacao -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Avaliacao">
+        <rdfs:label>Avaliação</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Comedia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Comedia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Genero"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Diretor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Diretor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Pessoa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Documentario -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Documentario">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Filme"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#atuadoPor"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Ator"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#dirigidoPor"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Diretor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Documentário</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Evento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Evento">
+        <rdfs:label>Evento</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#FiccaoCientifica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#FiccaoCientifica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Genero"/>
+        <rdfs:label>Ficção científica</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Filme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Filme">
+        <rdfs:label>Filme</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Genero -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Genero">
+        <rdfs:label>Gênero</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Musical -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Musical">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Genero"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Pessoa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Pessoa">
+        <rdfs:label>Pessoa</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Premio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Premio">
+        <rdfs:label>Prêmio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Produtor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Produtor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Pessoa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Roteirista -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Roteirista">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Pessoa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Suspense -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Suspense">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Genero"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Terror -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Terror">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Genero"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Usuario -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Usuario">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/phell/ontologies/2024/9/sistemarecomendacao#Pessoa"/>
+    </owl:Class>
+    
+</rdf:RDF>
+    
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
