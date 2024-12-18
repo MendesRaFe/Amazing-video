@@ -31,6 +31,43 @@ class SistemaRecomendacao:
         self.salvar_ontologia()
         return f"Usuário '{nome}' cadastrado com sucesso!"
     
+    
+    def adicionar_generos_favoritos(self, email_usuario, lista_generos):
+        # Busca o usuário na ontologia pelo email
+        usuario = self.onto.search_one(iri=f"*{email_usuario}")
+        if not usuario:
+            return f"Erro: Usuário com email '{email_usuario}' não encontrado."
+
+        # Verifica quantos gêneros já estão associados ao usuário
+        generos_atuais = list(getattr(usuario, "temPreferencia", []))
+        if len(generos_atuais) >= 3:
+            return f"Erro: Usuário já possui 3 gêneros favoritos. Não é possível adicionar mais."
+
+        # Adiciona os novos gêneros, respeitando o limite de 3
+        for nome_genero in lista_generos:
+            if len(generos_atuais) >= 3:
+                break  # Interrompe o loop se o limite for alcançado
+
+            # Busca a instância do gênero na ontologia
+            genero = self.onto.search_one(iri=f"*{nome_genero}")
+            if not genero:
+                print(f"Erro: Gênero '{nome_genero}' não encontrado.")
+                continue
+
+            # Verifica se o gênero já está associado ao usuário
+            if genero in generos_atuais:
+                print(f"Usuário já gosta do gênero '{nome_genero}'.")
+                continue
+
+            # Associa o gênero ao usuário
+            usuario.temPreferencia.append(genero)
+            generos_atuais.append(genero)
+            print(f"Gênero '{nome_genero}' associado ao usuário '{email_usuario}'.")
+
+        # Salva as alterações na ontologia
+        self.salvar_ontologia()
+        return f"Gêneros favoritos atualizados para o usuário '{email_usuario}'."
+
     def adicionar_atores_favoritos(self, email_usuario, lista_atores):
         # Busca o usuário na ontologia pelo email
         usuario = self.onto.search_one(iri=f"*{email_usuario}")
@@ -38,7 +75,7 @@ class SistemaRecomendacao:
             return f"Erro: Usuário com email '{email_usuario}' não encontrado."
         
         # Verifica quantos atores já estão associados ao usuário
-        atores_atuais = getattr(usuario, "gostaDe", [])
+        atores_atuais = list(getattr(usuario, "gostaDe", []))
         if len(atores_atuais) >= 5:
             return f"Erro: Usuário já possui 5 atores favoritos. Não é possível adicionar mais."
         
@@ -80,9 +117,18 @@ if __name__ == "__main__":
     )
     print(resultado)
 
-    # Adicionar atores favoritos ao usuário cadastrado
-    resultado = sistema.adicionar_atores_favoritos(
+    # Adicionar gêneros favoritos de filmes ao usuário cadastrado
+    resultado = sistema.adicionar_generos_favoritos(
         email_usuario="carlos@exemplo.com",
-        lista_atores=["Sigourney_Weaver"]
+        lista_generos=["FilmeDeSuspense", "FilmeDeComedia", "FilmeDeAcao", "FilmeMusical"]
     )
     print(resultado)
+
+    # Adicionar atores favoritos ao usuário cadastrado
+    resultado = sistema.adicionar_atores_favoritos(
+        email_usuario="usuario@email.com",
+        lista_atores=["Sigourney_Weaver", "Stephanie_Beatriz", "Zoe_Saldana", "Dan_Stevens"]
+    )
+    print(resultado)
+
+    
