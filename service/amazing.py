@@ -381,8 +381,10 @@ for filme in filmes_conhecidos:
 # Adiciona instâncias de Usuarios
 for user in usuarios:
     # Normaliza o nome da instância (sem acentos ou caracteres especiais)
-    nome_instancia = normalizar_nome(user['nome'])
-    user_instancia = onto.Usuario(nome_instancia)  
+    #nome_instancia = normalizar_nome(user['nome'])
+    #user_instancia = onto.Usuario(nome_instancia)
+    email = user['email'] 
+    user_instancia =  onto.Usuario(email)
 
     # Atribuir propriedades 
     user_instancia.nome.append(user['nome'])
@@ -646,14 +648,14 @@ def buscar_instancia(classe, nome):
     return onto.search_one(iri=f"*{nome}")
 
 #Cria uma avaliação apenas se o mesmo usuário não avaliou o mesmo filme antes.
-def criar_avaliacao(nome_avaliacao, nome_usuario, nome_filme, nota):
+def criar_avaliacao(nome_avaliacao, email_usuario, nome_filme, nota):
 
     # Busca as instâncias do usuário e do filme
-    usuario = buscar_instancia(onto.Usuario, nome_usuario)
+    usuario = buscar_instancia(onto.Usuario, email_usuario)
     filme = buscar_instancia(onto.Filme, nome_filme)
 
     if not usuario:
-        print(f"Erro: Usuário '{nome_usuario}' não encontrado.")
+        print(f"Erro: Usuário '{email_usuario}' não encontrado.")
         return
     if not filme:
         print(f"Erro: Filme '{nome_filme}' não encontrado.")
@@ -663,7 +665,7 @@ def criar_avaliacao(nome_avaliacao, nome_usuario, nome_filme, nota):
     avaliacao_existente = onto.search(type=onto.Avaliacao, avaliadoPor=usuario, pertenceAoFilme=filme)
     
     if avaliacao_existente:
-        print(f"Erro: {usuario.name} já avaliou o filme {filme.name}. Avaliação não permitida.")
+        print(f"Erro: {usuario.email} já avaliou o filme {filme.name}. Avaliação não permitida.")
     else:
         # Cria uma nova avaliação
         nova_avaliacao = onto.Avaliacao(nome_avaliacao)
@@ -699,16 +701,43 @@ for i, usuario in enumerate(usuarios):
         avaliacao_id += 1  # Incrementa o ID da avaliação
 
 
+# Cria uma associação apenas se o mesmo usuário não indicou o mesmo ator antes
+def gostaDeAtor(usuario, ator):
+    """
+    Relaciona um usuário a um ator, caso a relação ainda não exista.
+    """
+    # Verifica se o usuário já gosta do ator
+    if ator in usuario.gostaDe:
+        print(f"Erro: {usuario.email} já indicou o ator {ator.name}. Indicação não permitida.")
+        return
+
+    # Cria a associação
+    usuario.gostaDe.append(ator)
+    
+
+# Iterar sobre todas as instâncias de Usuario e Ator
+usuarios = list(onto.Usuario.instances())  # Instâncias de usuários
+atores = list(onto.Ator.instances())      # Instâncias de atores
+
+# Itera sobre cada usuário
+for i, usuario in enumerate(usuarios):
+    # Seleciona 5 atores aleatórios da lista de atores
+    atores_selecionados = random.sample(atores, k=5)
+
+    # Relaciona o usuário com cada um dos 5 atores selecionados
+    for ator in atores_selecionados:
+        gostaDeAtor(usuario, ator)
+
+
 #print([filme.name for filme in onto.Filme.instances()])
 # print()
 # print([ator.name for ator in onto.Ator.instances()])
 
-
-#for diretores in onto.Diretor.instances():
-#    print(diretores)
+# for usuarios in onto.Usuario.instances():
+#     print(usuarios)
 
 #print(dir(onto))
 #print(list(onto.properties()))
 
 # Salvar as alterações no RDF com identificadores únicos
-onto.save(file="filmes_atualizado_com_ids.rdf")
+onto.save(file="filmesV2.rdf")
